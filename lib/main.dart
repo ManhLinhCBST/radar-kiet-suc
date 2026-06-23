@@ -1,4 +1,5 @@
 ﻿import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'app_runtime.dart';
 import 'local_history.dart';
@@ -98,6 +99,14 @@ class _CheckinInputPageState extends State<CheckinInputPage> {
       _records = records;
       _trajectory = TrajectorySummary.fromRecords(records);
     });
+  }
+
+  Future<void> _exportHistoryJson() async {
+    final json = await _historyStore.exportRecordsJson();
+
+    await Clipboard.setData(
+      ClipboardData(text: json),
+    );
   }
 
   Future<void> _openResult(AppRuntime runtime) async {
@@ -219,6 +228,7 @@ class _CheckinInputPageState extends State<CheckinInputPage> {
                         trajectory: _trajectory,
                         onClear: _clearHistory,
                         onSeedDemo: _seedDemoHistory,
+                        onExport: _exportHistoryJson,
                       ),
                     ),
                   );
@@ -643,12 +653,14 @@ class HistoryPage extends StatelessWidget {
     required this.trajectory,
     required this.onClear,
     required this.onSeedDemo,
+    required this.onExport,
   });
 
   final List<CheckinRecord> records;
   final TrajectorySummary trajectory;
   final Future<void> Function() onClear;
   final Future<void> Function() onSeedDemo;
+  final Future<void> Function() onExport;
 
   @override
   Widget build(BuildContext context) {
@@ -658,6 +670,21 @@ class HistoryPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Lịch sử check-in'),
         actions: [
+          IconButton(
+            tooltip: 'Xuất dữ liệu JSON',
+            onPressed: () async {
+              final messenger = ScaffoldMessenger.of(context);
+
+              await onExport();
+
+              messenger.showSnackBar(
+                const SnackBar(
+                  content: Text('Đã copy lịch sử JSON vào clipboard.'),
+                ),
+              );
+            },
+            icon: const Icon(Icons.ios_share),
+          ),
           IconButton(
             tooltip: 'Tạo dữ liệu mẫu 3 ngày',
             onPressed: () async {
@@ -1127,5 +1154,10 @@ String _formatValue(double value) {
 
   return value.toStringAsFixed(1);
 }
+
+
+
+
+
 
 

@@ -579,6 +579,19 @@ class HistoryStore {
 
     return 'high';
   }
+  Future<String> exportRecordsJson() async {
+    final records = await loadRecords();
+
+    final payload = <String, dynamic>{
+      'schema': 'body_battery_history_export_v1',
+      'exported_at': DateTime.now().toIso8601String(),
+      'record_count': records.length,
+      'records': records.map((item) => item.toJson()).toList(),
+    };
+
+    return const JsonEncoder.withIndent('  ').convert(payload);
+  }
+
   Future<void> clear() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(storageKey);
@@ -642,4 +655,5 @@ int _int(dynamic value) {
 
   return int.tryParse(value.toString()) ?? 0;
 }
+
 
