@@ -1,4 +1,4 @@
-# Flutter / Dart
+﻿# Flutter / Dart
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
@@ -50,3 +50,9 @@ release/
 
 # Raw local screenshots
 play_assets/screenshots/raw/
+
+# Android release signing secrets
+android/key.properties
+android/upload-keystore.jks
+android/*.jks
+
