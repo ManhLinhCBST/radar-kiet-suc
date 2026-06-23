@@ -1,0 +1,70 @@
+﻿DATA SAFETY DRAFT — GOOGLE PLAY
+Ứng dụng: Radar Kiệt Sức
+Package: vn.mlcbst.radarkietsuc
+Version: 1.0.0+1
+
+1. App có thu thập dữ liệu không?
+
+Đề xuất khai báo thận trọng:
+
+- App xử lý dữ liệu người dùng nhập trong thiết bị.
+- App không gửi dữ liệu lên máy chủ ở phiên bản hiện tại.
+- App không tự động chia sẻ dữ liệu với bên thứ ba.
+- App có thể xử lý dữ liệu sức khỏe/tự đánh giá sức khỏe theo nghĩa người dùng tự nhập để tính chỉ số hao mòn.
+
+2. Data types có thể liên quan
+
+Health and fitness:
+- Health info: có, vì người dùng tự nhập trạng thái mệt, phục hồi, tải, giấc ngủ, trạng thái cơ thể.
+- Fitness info: không, nếu app không theo dõi bài tập, bước chân, nhịp tim, calo.
+
+App activity:
+- App interactions: có thể không khai nếu không gửi ra ngoài.
+- In-app search history: không.
+- Installed apps: không.
+
+Personal info:
+- Name: không.
+- Email address: không trong app hiện tại.
+- User IDs: không.
+- Address: không.
+- Phone number: không.
+
+Location:
+- Không.
+
+Financial info:
+- Không.
+
+Photos and videos:
+- Không.
+
+Audio:
+- Không.
+
+Files and docs:
+- Không, trừ khi sau này app cho import/export file trực tiếp.
+
+Device or other IDs:
+- Không, nếu app không dùng analytics/ads.
+
+3. Data sharing
+
+- Không tự động chia sẻ dữ liệu với bên thứ ba.
+- Người dùng có thể tự copy JSON vào clipboard và tự chia sẻ ngoài ứng dụng.
+
+4. Data collection purpose
+
+- App functionality.
+- Health/self-tracking functionality.
+- User-controlled export.
+
+5. Data encryption in transit
+
+- Không áp dụng nếu app không truyền dữ liệu qua mạng.
+- Nếu Play Console bắt buộc chọn, cần khai đúng theo việc app có truyền dữ liệu hay không.
+
+6. Data deletion
+
+- Người dùng có thể xóa lịch sử trong app.
+- Người dùng có thể gỡ app để xóa dữ liệu cục bộ.
