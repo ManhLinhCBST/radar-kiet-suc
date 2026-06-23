@@ -1,0 +1,30 @@
+﻿{
+    "version":  "1.0.0",
+    "improving_threshold":  10,
+    "stable_threshold":  5,
+    "declining_threshold":  -10,
+    "states":  [
+                   {
+                       "message":  "Hệ đang hồi phục.",
+                       "min":  10,
+                       "id":  "recovering"
+                   },
+                   {
+                       "message":  "Hệ tương đối ổn định.",
+                       "min":  -5,
+                       "id":  "stable",
+                       "max":  9
+                   },
+                   {
+                       "message":  "Hệ đang suy giảm.",
+                       "min":  -20,
+                       "id":  "declining",
+                       "max":  -6
+                   },
+                   {
+                       "message":  "Hệ đang lao dốc.",
+                       "id":  "collapsing",
+                       "max":  -21
+                   }
+               ]
+}

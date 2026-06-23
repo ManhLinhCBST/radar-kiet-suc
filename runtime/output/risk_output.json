@@ -1,0 +1,232 @@
+﻿{
+    "date":  "2026-06-22",
+    "source_snapshot":  ".\\runtime\\samples\\sample_day_2026_06_22.json",
+    "risk_count":  32,
+    "risk_semantics":  "0-1, càng cao nghĩa là rủi ro hao mòn / kiệt sức càng cao.",
+    "risks":  [
+                  {
+                      "question_id":  "sleep_hours",
+                      "node":  "nap",
+                      "value":  4,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "food_quality",
+                      "node":  "nap",
+                      "value":  5,
+                      "band":  "yellow",
+                      "risk":  0.69
+                  },
+                  {
+                      "question_id":  "water_intake",
+                      "node":  "nap",
+                      "value":  4,
+                      "band":  "yellow",
+                      "risk":  0.69
+                  },
+                  {
+                      "question_id":  "bowel_quality",
+                      "node":  "chuyen_hoa",
+                      "value":  6,
+                      "band":  "yellow",
+                      "risk":  0.545
+                  },
+                  {
+                      "question_id":  "urine_quality",
+                      "node":  "chuyen_hoa",
+                      "value":  7,
+                      "band":  "yellow",
+                      "risk":  0.4
+                  },
+                  {
+                      "question_id":  "digestion_feeling",
+                      "node":  "chuyen_hoa",
+                      "value":  5,
+                      "band":  "yellow",
+                      "risk":  0.69
+                  },
+                  {
+                      "question_id":  "sleep_quality",
+                      "node":  "chuyen_hoa",
+                      "value":  4,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "energy_level",
+                      "node":  "du_tru",
+                      "value":  3,
+                      "band":  "red",
+                      "risk":  0.775
+                  },
+                  {
+                      "question_id":  "endurance",
+                      "node":  "du_tru",
+                      "value":  4,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "load_capacity",
+                      "node":  "du_tru",
+                      "value":  4,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "workload",
+                      "node":  "tai",
+                      "value":  8,
+                      "band":  "red",
+                      "risk":  0.8
+                  },
+                  {
+                      "question_id":  "family_load",
+                      "node":  "tai",
+                      "value":  5,
+                      "band":  "yellow",
+                      "risk":  0.545
+                  },
+                  {
+                      "question_id":  "financial_pressure",
+                      "node":  "tai",
+                      "value":  4,
+                      "band":  "yellow",
+                      "risk":  0.4
+                  },
+                  {
+                      "question_id":  "illness_load",
+                      "node":  "tai",
+                      "value":  2,
+                      "band":  "green",
+                      "risk":  0.26
+                  },
+                  {
+                      "question_id":  "mental_pressure",
+                      "node":  "tai",
+                      "value":  7,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "real_rest",
+                      "node":  "phuc_hoi",
+                      "value":  3,
+                      "band":  "red",
+                      "risk":  0.775
+                  },
+                  {
+                      "question_id":  "relax_ability",
+                      "node":  "phuc_hoi",
+                      "value":  4,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "self_time",
+                      "node":  "phuc_hoi",
+                      "value":  2,
+                      "band":  "red",
+                      "risk":  0.85
+                  },
+                  {
+                      "question_id":  "load_adaptation",
+                      "node":  "thich_nghi",
+                      "value":  4,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "getting_stronger",
+                      "node":  "thich_nghi",
+                      "value":  3,
+                      "band":  "red",
+                      "risk":  0.775
+                  },
+                  {
+                      "question_id":  "declining_trend",
+                      "node":  "thich_nghi",
+                      "value":  7,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "body_pain",
+                      "node":  "hao_mon",
+                      "value":  5,
+                      "band":  "yellow",
+                      "risk":  0.545
+                  },
+                  {
+                      "question_id":  "brain_fog",
+                      "node":  "hao_mon",
+                      "value":  6,
+                      "band":  "yellow",
+                      "risk":  0.69
+                  },
+                  {
+                      "question_id":  "poor_focus",
+                      "node":  "hao_mon",
+                      "value":  7,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "irritability",
+                      "node":  "hao_mon",
+                      "value":  6,
+                      "band":  "yellow",
+                      "risk":  0.69
+                  },
+                  {
+                      "question_id":  "anxiety",
+                      "node":  "hao_mon",
+                      "value":  5,
+                      "band":  "yellow",
+                      "risk":  0.545
+                  },
+                  {
+                      "question_id":  "social_avoidance",
+                      "node":  "hao_mon",
+                      "value":  4,
+                      "band":  "yellow",
+                      "risk":  0.4
+                  },
+                  {
+                      "question_id":  "insomnia",
+                      "node":  "mat_kiem_soat",
+                      "value":  6,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "caffeine_dependence",
+                      "node":  "mat_kiem_soat",
+                      "value":  7,
+                      "band":  "red",
+                      "risk":  0.7
+                  },
+                  {
+                      "question_id":  "alcohol_use",
+                      "node":  "mat_kiem_soat",
+                      "value":  0,
+                      "band":  "green",
+                      "risk":  0
+                  },
+                  {
+                      "question_id":  "emotional_eating",
+                      "node":  "mat_kiem_soat",
+                      "value":  5,
+                      "band":  "yellow",
+                      "risk":  0.545
+                  },
+                  {
+                      "question_id":  "screen_overuse",
+                      "node":  "mat_kiem_soat",
+                      "value":  8,
+                      "band":  "red",
+                      "risk":  0.8
+                  }
+              ]
+}

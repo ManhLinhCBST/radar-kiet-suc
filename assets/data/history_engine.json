@@ -1,0 +1,22 @@
+﻿{
+    "version":  "1.0.0",
+    "windows":  [
+                    {
+                        "id":  "daily",
+                        "days":  1
+                    },
+                    {
+                        "id":  "weekly",
+                        "days":  7
+                    },
+                    {
+                        "id":  "monthly",
+                        "days":  30
+                    },
+                    {
+                        "id":  "quarterly",
+                        "days":  90
+                    }
+                ],
+    "minimum_samples":  3
+}

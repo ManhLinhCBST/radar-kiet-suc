@@ -1,0 +1,63 @@
+﻿{
+  "version": "2.0.0",
+  "score_semantics": "risk_score",
+  "meaning": "Điểm càng cao nghĩa là rủi ro hao mòn / kiệt sức càng cao.",
+  "nodes": [
+    {
+      "id": "nap",
+      "name": "Nạp",
+      "low_message": "Nguồn nạp hiện khá ổn. Ngủ, ăn, uống hoặc đầu vào năng lượng chưa phải điểm nghẽn chính.",
+      "medium_message": "Nguồn nạp đang có dấu hiệu thiếu hụt. Cần chú ý ngủ, ăn uống và nước.",
+      "high_message": "Nguồn nạp đang yếu rõ. Hệ có thể đang thiếu đầu vào để duy trì năng lượng."
+    },
+    {
+      "id": "chuyen_hoa",
+      "name": "Chuyển hóa",
+      "low_message": "Chuyển hóa hiện tương đối ổn. Tín hiệu tiêu hóa, đại tiện, tiểu tiện và giấc ngủ chưa lệch nhiều.",
+      "medium_message": "Chuyển hóa đang dao động. Những gì nạp vào có thể chưa chuyển thành năng lượng ổn định.",
+      "high_message": "Chuyển hóa đang lệch rõ. Cần chú ý tiêu hóa, đại tiện, tiểu tiện và chất lượng giấc ngủ."
+    },
+    {
+      "id": "du_tru",
+      "name": "Dự trữ",
+      "low_message": "Dự trữ hiện còn tương đối tốt. Pin nền và sức chịu tải chưa suy giảm rõ.",
+      "medium_message": "Dự trữ đang giảm. Bạn còn chịu được nhưng dễ tụt nếu tải tăng thêm.",
+      "high_message": "Dự trữ đang thấp. Pin nền, sức bền và khả năng chịu tải có dấu hiệu suy giảm rõ."
+    },
+    {
+      "id": "tai",
+      "name": "Tải",
+      "low_message": "Tải hiện còn trong vùng tương đối kiểm soát được.",
+      "medium_message": "Tải đang ở mức đáng chú ý. Công việc, tâm lý, gia đình hoặc tài chính có thể đang kéo hệ xuống.",
+      "high_message": "Tải đang cao. Hệ có nguy cơ bị đẩy vào quá tải nếu không giảm bớt."
+    },
+    {
+      "id": "phuc_hoi",
+      "name": "Phục hồi",
+      "low_message": "Phục hồi hiện còn khá ổn. Nghỉ ngơi vẫn có tác dụng hồi lại.",
+      "medium_message": "Phục hồi đang yếu dần. Nghỉ ngơi có nhưng chưa đủ sâu.",
+      "high_message": "Phục hồi đang kém rõ. Có thể đang rơi vào trạng thái nghỉ mà không hồi."
+    },
+    {
+      "id": "thich_nghi",
+      "name": "Thích nghi",
+      "low_message": "Khả năng thích nghi hiện còn ổn. Hệ vẫn đang chịu được nhịp hiện tại.",
+      "medium_message": "Thích nghi đang dao động. Bạn có thể đang bắt đầu đuối với tải hiện tại.",
+      "high_message": "Thích nghi đang yếu. Tải hiện tại có thể đang vượt quá khả năng thích ứng."
+    },
+    {
+      "id": "hao_mon",
+      "name": "Hao mòn",
+      "low_message": "Dấu hiệu hao mòn còn thấp. Thân thể, nhận thức, cảm xúc và xã hội chưa lệch rõ.",
+      "medium_message": "Đã có dấu hiệu hao mòn. Cần theo dõi đau mỏi, não mờ, cáu gắt, lo âu hoặc né giao tiếp.",
+      "high_message": "Hao mòn đang rõ. Dấu hiệu có thể đã lan sang thân thể, nhận thức, cảm xúc hoặc quan hệ xã hội."
+    },
+    {
+      "id": "mat_kiem_soat",
+      "name": "Mất kiểm soát",
+      "low_message": "Dấu hiệu mất kiểm soát còn thấp. Hành vi bù trừ chưa nổi bật.",
+      "medium_message": "Đã có dấu hiệu bù trừ. Cần chú ý caffeine, màn hình, ăn theo cảm xúc, mất ngủ hoặc rượu bia.",
+      "high_message": "Mất kiểm soát đang rõ. Hệ có thể đang dùng hành vi bù trừ để kéo năng lượng giả."
+    }
+  ]
+}

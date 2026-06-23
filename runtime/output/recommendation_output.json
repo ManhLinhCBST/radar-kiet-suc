@@ -1,0 +1,112 @@
+﻿{
+    "date":  "2026-06-22",
+    "system_score":  66.52,
+    "system_level":  "medium",
+    "summary":  "Hôm nay hệ của bạn đang ở vùng cảnh báo. Nên ưu tiên phục hồi, giảm tải và bảo vệ dự trữ.",
+    "top_nodes":  [
+                      {
+                          "node":  "phuc_hoi",
+                          "name":  "Phục hồi",
+                          "node_score":  76.88,
+                          "node_weight":  10,
+                          "level":  "high",
+                          "message":  "Phục hồi đang kém rõ. Có thể đang rơi vào trạng thái nghỉ mà không hồi."
+                      },
+                      {
+                          "node":  "du_tru",
+                          "name":  "Dự trữ",
+                          "node_score":  72.88,
+                          "node_weight":  20,
+                          "level":  "high",
+                          "message":  "Dự trữ đang thấp. Pin nền, sức bền và khả năng chịu tải có dấu hiệu suy giảm rõ."
+                      },
+                      {
+                          "node":  "thich_nghi",
+                          "name":  "Thích nghi",
+                          "node_score":  72.31,
+                          "node_weight":  10,
+                          "level":  "high",
+                          "message":  "Thích nghi đang yếu. Tải hiện tại có thể đang vượt quá khả năng thích ứng."
+                      }
+                  ],
+    "recommended_actions":  [
+                                {
+                                    "node":  "phuc_hoi",
+                                    "name":  "Phục hồi",
+                                    "node_score":  76.88,
+                                    "level":  "high",
+                                    "action_id":  "phuc_hoi_h_01",
+                                    "title":  "Ưu tiên phục hồi trước năng suất",
+                                    "detail":  "Hôm nay mục tiêu chính không phải làm nhiều hơn, mà là giúp hệ hồi lại đủ để không tụt tiếp.",
+                                    "priority":  "critical",
+                                    "priority_rank":  4,
+                                    "duration_minutes":  1,
+                                    "effort":  "medium"
+                                },
+                                {
+                                    "node":  "du_tru",
+                                    "name":  "Dự trữ",
+                                    "node_score":  72.88,
+                                    "level":  "high",
+                                    "action_id":  "du_tru_h_01",
+                                    "title":  "Chuyển sang chế độ tiết kiệm pin",
+                                    "detail":  "Trong hôm nay, chỉ làm việc quan trọng nhất; giảm việc xã giao, tranh luận và quyết định nặng.",
+                                    "priority":  "critical",
+                                    "priority_rank":  4,
+                                    "duration_minutes":  10,
+                                    "effort":  "medium"
+                                },
+                                {
+                                    "node":  "thich_nghi",
+                                    "name":  "Thích nghi",
+                                    "node_score":  72.31,
+                                    "level":  "high",
+                                    "action_id":  "thich_nghi_h_01",
+                                    "title":  "Dừng ép hệ thích nghi",
+                                    "detail":  "Nếu hôm nay càng cố càng đuối, hãy giảm tải thay vì ép bản thân vượt qua.",
+                                    "priority":  "critical",
+                                    "priority_rank":  4,
+                                    "duration_minutes":  1,
+                                    "effort":  "medium"
+                                },
+                                {
+                                    "node":  "phuc_hoi",
+                                    "name":  "Phục hồi",
+                                    "node_score":  76.88,
+                                    "level":  "high",
+                                    "action_id":  "phuc_hoi_h_02",
+                                    "title":  "Cắt màn hình trước ngủ",
+                                    "detail":  "Giảm màn hình 45-60 phút trước ngủ để tăng khả năng hồi phục qua đêm.",
+                                    "priority":  "high",
+                                    "priority_rank":  3,
+                                    "duration_minutes":  60,
+                                    "effort":  "medium"
+                                },
+                                {
+                                    "node":  "du_tru",
+                                    "name":  "Dự trữ",
+                                    "node_score":  72.88,
+                                    "level":  "high",
+                                    "action_id":  "du_tru_h_02",
+                                    "title":  "Nghỉ chủ động giữa ngày",
+                                    "detail":  "Chèn một khoảng nghỉ 15-20 phút không màn hình để hệ thần kinh hạ tải.",
+                                    "priority":  "high",
+                                    "priority_rank":  3,
+                                    "duration_minutes":  20,
+                                    "effort":  "low"
+                                },
+                                {
+                                    "node":  "thich_nghi",
+                                    "name":  "Thích nghi",
+                                    "node_score":  72.31,
+                                    "level":  "high",
+                                    "action_id":  "thich_nghi_h_02",
+                                    "title":  "Ổn định nhịp sinh hoạt",
+                                    "detail":  "Ưu tiên giờ ăn, giờ nghỉ và giờ ngủ đều hơn trong 24 giờ tới.",
+                                    "priority":  "high",
+                                    "priority_rank":  3,
+                                    "duration_minutes":  10,
+                                    "effort":  "medium"
+                                }
+                            ]
+}

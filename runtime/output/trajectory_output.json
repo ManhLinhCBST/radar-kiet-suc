@@ -1,0 +1,144 @@
+﻿{
+    "version":  "3.0.0",
+    "status":  "ok",
+    "sample_count":  3,
+    "previous_date":  "2026-06-21",
+    "current_date":  "2026-06-22",
+    "system":  {
+                   "delta":  -3.15,
+                   "direction":  "improving",
+                   "magnitude":  "mild",
+                   "current_score":  66.52,
+                   "previous_score":  69.67,
+                   "state":  "mild_recovering",
+                   "message":  "Rủi ro đang giảm nhẹ. Hệ có dấu hiệu tốt lên nhưng chưa đủ mạnh để gọi là hồi phục rõ."
+               },
+    "nodes":  [
+                  {
+                      "node":  "nap",
+                      "name":  "Nạp",
+                      "previous_score":  69.42,
+                      "current_score":  69.42,
+                      "delta":  0,
+                      "direction":  "flat",
+                      "magnitude":  "none",
+                      "state":  "stable",
+                      "message":  "Rủi ro gần như không đổi. Hệ đang tương đối ổn định nhưng vẫn cần theo dõi."
+                  },
+                  {
+                      "node":  "thich_nghi",
+                      "name":  "Thích nghi",
+                      "previous_score":  72.31,
+                      "current_score":  72.31,
+                      "delta":  0,
+                      "direction":  "flat",
+                      "magnitude":  "none",
+                      "state":  "stable",
+                      "message":  "Rủi ro gần như không đổi. Hệ đang tương đối ổn định nhưng vẫn cần theo dõi."
+                  },
+                  {
+                      "node":  "du_tru",
+                      "name":  "Dự trữ",
+                      "previous_score":  72.88,
+                      "current_score":  72.88,
+                      "delta":  0,
+                      "direction":  "flat",
+                      "magnitude":  "none",
+                      "state":  "stable",
+                      "message":  "Rủi ro gần như không đổi. Hệ đang tương đối ổn định nhưng vẫn cần theo dõi."
+                  },
+                  {
+                      "node":  "mat_kiem_soat",
+                      "name":  "Mất kiểm soát",
+                      "previous_score":  63.2,
+                      "current_score":  56.67,
+                      "delta":  -6.53,
+                      "direction":  "improving",
+                      "magnitude":  "moderate",
+                      "state":  "mild_recovering",
+                      "message":  "Rủi ro đang giảm nhẹ. Hệ có dấu hiệu tốt lên nhưng chưa đủ mạnh để gọi là hồi phục rõ."
+                  },
+                  {
+                      "node":  "hao_mon",
+                      "name":  "Hao mòn",
+                      "previous_score":  67.4,
+                      "current_score":  60.75,
+                      "delta":  -6.65,
+                      "direction":  "improving",
+                      "magnitude":  "moderate",
+                      "state":  "mild_recovering",
+                      "message":  "Rủi ro đang giảm nhẹ. Hệ có dấu hiệu tốt lên nhưng chưa đủ mạnh để gọi là hồi phục rõ."
+                  },
+                  {
+                      "node":  "chuyen_hoa",
+                      "name":  "Chuyển hóa",
+                      "previous_score":  63.14,
+                      "current_score":  60.04,
+                      "delta":  -3.1,
+                      "direction":  "improving",
+                      "magnitude":  "mild",
+                      "state":  "mild_recovering",
+                      "message":  "Rủi ro đang giảm nhẹ. Hệ có dấu hiệu tốt lên nhưng chưa đủ mạnh để gọi là hồi phục rõ."
+                  },
+                  {
+                      "node":  "tai",
+                      "name":  "Tải",
+                      "previous_score":  67.76,
+                      "current_score":  58.5,
+                      "delta":  -9.26,
+                      "direction":  "improving",
+                      "magnitude":  "moderate",
+                      "state":  "mild_recovering",
+                      "message":  "Rủi ro đang giảm nhẹ. Hệ có dấu hiệu tốt lên nhưng chưa đủ mạnh để gọi là hồi phục rõ."
+                  },
+                  {
+                      "node":  "phuc_hoi",
+                      "name":  "Phục hồi",
+                      "previous_score":  76.88,
+                      "current_score":  76.88,
+                      "delta":  0,
+                      "direction":  "flat",
+                      "magnitude":  "none",
+                      "state":  "stable",
+                      "message":  "Rủi ro gần như không đổi. Hệ đang tương đối ổn định nhưng vẫn cần theo dõi."
+                  }
+              ],
+    "worsening_nodes":  {
+
+                        },
+    "improving_nodes":  [
+                            {
+                                "node":  "tai",
+                                "name":  "Tải",
+                                "previous_score":  67.76,
+                                "current_score":  58.5,
+                                "delta":  -9.26,
+                                "direction":  "improving",
+                                "magnitude":  "moderate",
+                                "state":  "mild_recovering",
+                                "message":  "Rủi ro đang giảm nhẹ. Hệ có dấu hiệu tốt lên nhưng chưa đủ mạnh để gọi là hồi phục rõ."
+                            },
+                            {
+                                "node":  "hao_mon",
+                                "name":  "Hao mòn",
+                                "previous_score":  67.4,
+                                "current_score":  60.75,
+                                "delta":  -6.65,
+                                "direction":  "improving",
+                                "magnitude":  "moderate",
+                                "state":  "mild_recovering",
+                                "message":  "Rủi ro đang giảm nhẹ. Hệ có dấu hiệu tốt lên nhưng chưa đủ mạnh để gọi là hồi phục rõ."
+                            },
+                            {
+                                "node":  "mat_kiem_soat",
+                                "name":  "Mất kiểm soát",
+                                "previous_score":  63.2,
+                                "current_score":  56.67,
+                                "delta":  -6.53,
+                                "direction":  "improving",
+                                "magnitude":  "moderate",
+                                "state":  "mild_recovering",
+                                "message":  "Rủi ro đang giảm nhẹ. Hệ có dấu hiệu tốt lên nhưng chưa đủ mạnh để gọi là hồi phục rõ."
+                            }
+                        ]
+}

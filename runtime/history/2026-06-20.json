@@ -1,0 +1,189 @@
+﻿{
+    "version":  "1.0.0",
+    "date":  "2026-06-20",
+    "source_snapshot":  ".\\runtime\\samples\\sample_day_2026_06_20.json",
+    "system":  {
+                   "summary":  "Hôm nay hệ của bạn đang ở vùng rủi ro cao. Không nên cố bứt tốc; cần giảm tải và phục hồi trước.",
+                   "score":  74.78,
+                   "level":  "high",
+                   "score_semantics":  "Điểm càng cao nghĩa là rủi ro hao mòn / kiệt sức càng cao."
+               },
+    "top_risks":  [
+                      {
+                          "node":  "phuc_hoi",
+                          "name":  "Phục hồi",
+                          "node_score":  84.38,
+                          "node_weight":  10,
+                          "level":  "high",
+                          "message":  "Phục hồi đang kém rõ. Có thể đang rơi vào trạng thái nghỉ mà không hồi."
+                      },
+                      {
+                          "node":  "thich_nghi",
+                          "name":  "Thích nghi",
+                          "node_score":  80.77,
+                          "node_weight":  10,
+                          "level":  "high",
+                          "message":  "Thích nghi đang yếu. Tải hiện tại có thể đang vượt quá khả năng thích ứng."
+                      },
+                      {
+                          "node":  "du_tru",
+                          "name":  "Dự trữ",
+                          "node_score":  80.38,
+                          "node_weight":  20,
+                          "level":  "high",
+                          "message":  "Dự trữ đang thấp. Pin nền, sức bền và khả năng chịu tải có dấu hiệu suy giảm rõ."
+                      }
+                  ],
+    "diagnostics":  [
+                        {
+                            "node":  "nap",
+                            "name":  "Nạp",
+                            "node_score":  73.13,
+                            "node_weight":  15,
+                            "level":  "high",
+                            "message":  "Nguồn nạp đang yếu rõ. Hệ có thể đang thiếu đầu vào để duy trì năng lượng."
+                        },
+                        {
+                            "node":  "thich_nghi",
+                            "name":  "Thích nghi",
+                            "node_score":  80.77,
+                            "node_weight":  10,
+                            "level":  "high",
+                            "message":  "Thích nghi đang yếu. Tải hiện tại có thể đang vượt quá khả năng thích ứng."
+                        },
+                        {
+                            "node":  "du_tru",
+                            "name":  "Dự trữ",
+                            "node_score":  80.38,
+                            "node_weight":  20,
+                            "level":  "high",
+                            "message":  "Dự trữ đang thấp. Pin nền, sức bền và khả năng chịu tải có dấu hiệu suy giảm rõ."
+                        },
+                        {
+                            "node":  "mat_kiem_soat",
+                            "name":  "Mất kiểm soát",
+                            "node_score":  64.97,
+                            "node_weight":  5,
+                            "level":  "medium",
+                            "message":  "Đã có dấu hiệu bù trừ. Cần chú ý caffeine, màn hình, ăn theo cảm xúc, mất ngủ hoặc rượu bia."
+                        },
+                        {
+                            "node":  "hao_mon",
+                            "name":  "Hao mòn",
+                            "node_score":  69.81,
+                            "node_weight":  10,
+                            "level":  "medium",
+                            "message":  "Đã có dấu hiệu hao mòn. Cần theo dõi đau mỏi, não mờ, cáu gắt, lo âu hoặc né giao tiếp."
+                        },
+                        {
+                            "node":  "chuyen_hoa",
+                            "name":  "Chuyển hóa",
+                            "node_score":  69.14,
+                            "node_weight":  10,
+                            "level":  "medium",
+                            "message":  "Chuyển hóa đang dao động. Những gì nạp vào có thể chưa chuyển thành năng lượng ổn định."
+                        },
+                        {
+                            "node":  "tai",
+                            "name":  "Tải",
+                            "node_score":  70.39,
+                            "node_weight":  20,
+                            "level":  "high",
+                            "message":  "Tải đang cao. Hệ có nguy cơ bị đẩy vào quá tải nếu không giảm bớt."
+                        },
+                        {
+                            "node":  "phuc_hoi",
+                            "name":  "Phục hồi",
+                            "node_score":  84.38,
+                            "node_weight":  10,
+                            "level":  "high",
+                            "message":  "Phục hồi đang kém rõ. Có thể đang rơi vào trạng thái nghỉ mà không hồi."
+                        }
+                    ],
+    "recommendations":  [
+                            {
+                                "node":  "phuc_hoi",
+                                "name":  "Phục hồi",
+                                "node_score":  84.38,
+                                "level":  "high",
+                                "action_id":  "phuc_hoi_h_01",
+                                "title":  "Ưu tiên phục hồi trước năng suất",
+                                "detail":  "Hôm nay mục tiêu chính không phải làm nhiều hơn, mà là giúp hệ hồi lại đủ để không tụt tiếp.",
+                                "priority":  "critical",
+                                "priority_rank":  4,
+                                "duration_minutes":  1,
+                                "effort":  "medium"
+                            },
+                            {
+                                "node":  "thich_nghi",
+                                "name":  "Thích nghi",
+                                "node_score":  80.77,
+                                "level":  "high",
+                                "action_id":  "thich_nghi_h_01",
+                                "title":  "Dừng ép hệ thích nghi",
+                                "detail":  "Nếu hôm nay càng cố càng đuối, hãy giảm tải thay vì ép bản thân vượt qua.",
+                                "priority":  "critical",
+                                "priority_rank":  4,
+                                "duration_minutes":  1,
+                                "effort":  "medium"
+                            },
+                            {
+                                "node":  "du_tru",
+                                "name":  "Dự trữ",
+                                "node_score":  80.38,
+                                "level":  "high",
+                                "action_id":  "du_tru_h_01",
+                                "title":  "Chuyển sang chế độ tiết kiệm pin",
+                                "detail":  "Trong hôm nay, chỉ làm việc quan trọng nhất; giảm việc xã giao, tranh luận và quyết định nặng.",
+                                "priority":  "critical",
+                                "priority_rank":  4,
+                                "duration_minutes":  10,
+                                "effort":  "medium"
+                            },
+                            {
+                                "node":  "phuc_hoi",
+                                "name":  "Phục hồi",
+                                "node_score":  84.38,
+                                "level":  "high",
+                                "action_id":  "phuc_hoi_h_02",
+                                "title":  "Cắt màn hình trước ngủ",
+                                "detail":  "Giảm màn hình 45-60 phút trước ngủ để tăng khả năng hồi phục qua đêm.",
+                                "priority":  "high",
+                                "priority_rank":  3,
+                                "duration_minutes":  60,
+                                "effort":  "medium"
+                            },
+                            {
+                                "node":  "thich_nghi",
+                                "name":  "Thích nghi",
+                                "node_score":  80.77,
+                                "level":  "high",
+                                "action_id":  "thich_nghi_h_02",
+                                "title":  "Ổn định nhịp sinh hoạt",
+                                "detail":  "Ưu tiên giờ ăn, giờ nghỉ và giờ ngủ đều hơn trong 24 giờ tới.",
+                                "priority":  "high",
+                                "priority_rank":  3,
+                                "duration_minutes":  10,
+                                "effort":  "medium"
+                            },
+                            {
+                                "node":  "du_tru",
+                                "name":  "Dự trữ",
+                                "node_score":  80.38,
+                                "level":  "high",
+                                "action_id":  "du_tru_h_02",
+                                "title":  "Nghỉ chủ động giữa ngày",
+                                "detail":  "Chèn một khoảng nghỉ 15-20 phút không màn hình để hệ thần kinh hạ tải.",
+                                "priority":  "high",
+                                "priority_rank":  3,
+                                "duration_minutes":  20,
+                                "effort":  "low"
+                            }
+                        ],
+    "artifacts":  {
+                      "risk_output":  "D:\\body_battery\\runtime\\output\\risk_output.json",
+                      "node_score_output":  "D:\\body_battery\\runtime\\output\\node_score_output.json",
+                      "recommendation_output":  "D:\\body_battery\\runtime\\output\\recommendation_output.json",
+                      "diagnostic_output":  "D:\\body_battery\\runtime\\output\\diagnostic_output.json"
+                  }
+}

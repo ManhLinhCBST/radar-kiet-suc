@@ -1,0 +1,420 @@
+﻿{
+    "version":  "2.0.0",
+    "generated_from":  "question_library.json",
+    "node_score_formula":  "sum(question_risk * internal_weight)",
+    "system_score_formula":  "sum(node_score * node_weight)",
+    "score_range":  {
+                        "min":  0,
+                        "max":  100
+                    },
+    "nodes":  [
+                  {
+                      "id":  "nap",
+                      "node_weight":  15,
+                      "question_count":  3,
+                      "questions":  [
+                                        {
+                                            "question_id":  "sleep_hours",
+                                            "title":  "Số giờ ngủ",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  12,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "critical",
+                                            "internal_weight":  41.67,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "food_quality",
+                                            "title":  "Chất lượng ăn uống",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "high",
+                                            "internal_weight":  33.33,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "water_intake",
+                                            "title":  "Nước uống",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  25,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        }
+                                    ]
+                  },
+                  {
+                      "id":  "thich_nghi",
+                      "node_weight":  10,
+                      "question_count":  3,
+                      "questions":  [
+                                        {
+                                            "question_id":  "load_adaptation",
+                                            "title":  "Bạn có quen được tải hiện tại không?",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "high",
+                                            "internal_weight":  30.77,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "getting_stronger",
+                                            "title":  "Bạn đang mạnh lên hay yếu đi?",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "high",
+                                            "internal_weight":  30.77,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "declining_trend",
+                                            "title":  "Bạn có cảm giác đuối dần không?",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "critical",
+                                            "internal_weight":  38.46,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        }
+                                    ]
+                  },
+                  {
+                      "id":  "du_tru",
+                      "node_weight":  20,
+                      "question_count":  3,
+                      "questions":  [
+                                        {
+                                            "question_id":  "energy_level",
+                                            "title":  "Năng lượng hiện tại",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "critical",
+                                            "internal_weight":  38.46,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "endurance",
+                                            "title":  "Sức bền trong ngày",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "high",
+                                            "internal_weight":  30.77,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "load_capacity",
+                                            "title":  "Khả năng chịu tải",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "high",
+                                            "internal_weight":  30.77,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        }
+                                    ]
+                  },
+                  {
+                      "id":  "mat_kiem_soat",
+                      "node_weight":  5,
+                      "question_count":  5,
+                      "questions":  [
+                                        {
+                                            "question_id":  "insomnia",
+                                            "title":  "Mất ngủ",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "critical",
+                                            "internal_weight":  29.41,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "caffeine_dependence",
+                                            "title":  "Lệ thuộc caffeine",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  17.65,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "alcohol_use",
+                                            "title":  "Rượu bia",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  17.65,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "emotional_eating",
+                                            "title":  "Ăn vô thức / ăn theo cảm xúc",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  17.65,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "screen_overuse",
+                                            "title":  "Màn hình quá mức",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  17.64,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        }
+                                    ]
+                  },
+                  {
+                      "id":  "hao_mon",
+                      "node_weight":  10,
+                      "question_count":  6,
+                      "questions":  [
+                                        {
+                                            "question_id":  "body_pain",
+                                            "title":  "Đau mỏi cơ thể",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "high",
+                                            "internal_weight":  16.67,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "brain_fog",
+                                            "title":  "Não mờ",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "high",
+                                            "internal_weight":  16.67,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "poor_focus",
+                                            "title":  "Mất tập trung",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "critical",
+                                            "internal_weight":  20.83,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "irritability",
+                                            "title":  "Dễ cáu gắt",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "high",
+                                            "internal_weight":  16.67,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "anxiety",
+                                            "title":  "Lo âu",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "high",
+                                            "internal_weight":  16.67,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "social_avoidance",
+                                            "title":  "Muốn tránh giao tiếp",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  12.49,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        }
+                                    ]
+                  },
+                  {
+                      "id":  "chuyen_hoa",
+                      "node_weight":  10,
+                      "question_count":  4,
+                      "questions":  [
+                                        {
+                                            "question_id":  "bowel_quality",
+                                            "title":  "Đại tiện",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  21.43,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "urine_quality",
+                                            "title":  "Tiểu tiện",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  21.43,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "digestion_feeling",
+                                            "title":  "Cảm giác tiêu hóa",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  21.43,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "sleep_quality",
+                                            "title":  "Chất lượng giấc ngủ",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "critical",
+                                            "internal_weight":  35.71,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        }
+                                    ]
+                  },
+                  {
+                      "id":  "tai",
+                      "node_weight":  20,
+                      "question_count":  5,
+                      "questions":  [
+                                        {
+                                            "question_id":  "workload",
+                                            "title":  "Tải công việc",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "critical",
+                                            "internal_weight":  26.32,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "family_load",
+                                            "title":  "Tải gia đình",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  15.79,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "financial_pressure",
+                                            "title":  "Áp lực tài chính",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  15.79,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "illness_load",
+                                            "title":  "Tải bệnh tật / đau kéo dài",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  15.79,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        },
+                                        {
+                                            "question_id":  "mental_pressure",
+                                            "title":  "Áp lực tâm lý",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "high_is_bad",
+                                            "priority":  "critical",
+                                            "internal_weight":  26.31,
+                                            "normalization":  "risk = (answer - min) / (max - min)"
+                                        }
+                                    ]
+                  },
+                  {
+                      "id":  "phuc_hoi",
+                      "node_weight":  10,
+                      "question_count":  3,
+                      "questions":  [
+                                        {
+                                            "question_id":  "real_rest",
+                                            "title":  "Nghỉ có thật sự hồi không?",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "critical",
+                                            "internal_weight":  41.67,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "relax_ability",
+                                            "title":  "Khả năng thư giãn",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "high",
+                                            "internal_weight":  33.33,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        },
+                                        {
+                                            "question_id":  "self_time",
+                                            "title":  "Thời gian cho bản thân",
+                                            "input_type":  "slider",
+                                            "min":  0,
+                                            "max":  10,
+                                            "risk_direction":  "low_is_bad",
+                                            "priority":  "medium",
+                                            "internal_weight":  25,
+                                            "normalization":  "risk = 1 - ((answer - min) / (max - min))"
+                                        }
+                                    ]
+                  }
+              ]
+}

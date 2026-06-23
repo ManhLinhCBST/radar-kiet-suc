@@ -1,0 +1,326 @@
+﻿{
+    "date":  "2026-06-22",
+    "system_score":  66.52,
+    "nodes":  [
+                  {
+                      "node":  "nap",
+                      "node_weight":  15,
+                      "question_count":  3,
+                      "node_score":  69.42,
+                      "details":  [
+                                      {
+                                          "question_id":  "sleep_hours",
+                                          "value":  4,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  41.67,
+                                          "contribution":  29.17
+                                      },
+                                      {
+                                          "question_id":  "food_quality",
+                                          "value":  5,
+                                          "band":  "yellow",
+                                          "risk":  0.69,
+                                          "internal_weight":  33.33,
+                                          "contribution":  23
+                                      },
+                                      {
+                                          "question_id":  "water_intake",
+                                          "value":  4,
+                                          "band":  "yellow",
+                                          "risk":  0.69,
+                                          "internal_weight":  25,
+                                          "contribution":  17.25
+                                      }
+                                  ]
+                  },
+                  {
+                      "node":  "thich_nghi",
+                      "node_weight":  10,
+                      "question_count":  3,
+                      "node_score":  72.31,
+                      "details":  [
+                                      {
+                                          "question_id":  "load_adaptation",
+                                          "value":  4,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  30.77,
+                                          "contribution":  21.54
+                                      },
+                                      {
+                                          "question_id":  "getting_stronger",
+                                          "value":  3,
+                                          "band":  "red",
+                                          "risk":  0.775,
+                                          "internal_weight":  30.77,
+                                          "contribution":  23.85
+                                      },
+                                      {
+                                          "question_id":  "declining_trend",
+                                          "value":  7,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  38.46,
+                                          "contribution":  26.92
+                                      }
+                                  ]
+                  },
+                  {
+                      "node":  "du_tru",
+                      "node_weight":  20,
+                      "question_count":  3,
+                      "node_score":  72.88,
+                      "details":  [
+                                      {
+                                          "question_id":  "energy_level",
+                                          "value":  3,
+                                          "band":  "red",
+                                          "risk":  0.775,
+                                          "internal_weight":  38.46,
+                                          "contribution":  29.81
+                                      },
+                                      {
+                                          "question_id":  "endurance",
+                                          "value":  4,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  30.77,
+                                          "contribution":  21.54
+                                      },
+                                      {
+                                          "question_id":  "load_capacity",
+                                          "value":  4,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  30.77,
+                                          "contribution":  21.54
+                                      }
+                                  ]
+                  },
+                  {
+                      "node":  "mat_kiem_soat",
+                      "node_weight":  5,
+                      "question_count":  5,
+                      "node_score":  56.67,
+                      "details":  [
+                                      {
+                                          "question_id":  "insomnia",
+                                          "value":  6,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  29.41,
+                                          "contribution":  20.59
+                                      },
+                                      {
+                                          "question_id":  "caffeine_dependence",
+                                          "value":  7,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  17.65,
+                                          "contribution":  12.35
+                                      },
+                                      {
+                                          "question_id":  "alcohol_use",
+                                          "value":  0,
+                                          "band":  "green",
+                                          "risk":  0,
+                                          "internal_weight":  17.65,
+                                          "contribution":  0
+                                      },
+                                      {
+                                          "question_id":  "emotional_eating",
+                                          "value":  5,
+                                          "band":  "yellow",
+                                          "risk":  0.545,
+                                          "internal_weight":  17.65,
+                                          "contribution":  9.62
+                                      },
+                                      {
+                                          "question_id":  "screen_overuse",
+                                          "value":  8,
+                                          "band":  "red",
+                                          "risk":  0.8,
+                                          "internal_weight":  17.64,
+                                          "contribution":  14.11
+                                      }
+                                  ]
+                  },
+                  {
+                      "node":  "hao_mon",
+                      "node_weight":  10,
+                      "question_count":  6,
+                      "node_score":  60.75,
+                      "details":  [
+                                      {
+                                          "question_id":  "body_pain",
+                                          "value":  5,
+                                          "band":  "yellow",
+                                          "risk":  0.545,
+                                          "internal_weight":  16.67,
+                                          "contribution":  9.09
+                                      },
+                                      {
+                                          "question_id":  "brain_fog",
+                                          "value":  6,
+                                          "band":  "yellow",
+                                          "risk":  0.69,
+                                          "internal_weight":  16.67,
+                                          "contribution":  11.5
+                                      },
+                                      {
+                                          "question_id":  "poor_focus",
+                                          "value":  7,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  20.83,
+                                          "contribution":  14.58
+                                      },
+                                      {
+                                          "question_id":  "irritability",
+                                          "value":  6,
+                                          "band":  "yellow",
+                                          "risk":  0.69,
+                                          "internal_weight":  16.67,
+                                          "contribution":  11.5
+                                      },
+                                      {
+                                          "question_id":  "anxiety",
+                                          "value":  5,
+                                          "band":  "yellow",
+                                          "risk":  0.545,
+                                          "internal_weight":  16.67,
+                                          "contribution":  9.09
+                                      },
+                                      {
+                                          "question_id":  "social_avoidance",
+                                          "value":  4,
+                                          "band":  "yellow",
+                                          "risk":  0.4,
+                                          "internal_weight":  12.49,
+                                          "contribution":  5
+                                      }
+                                  ]
+                  },
+                  {
+                      "node":  "chuyen_hoa",
+                      "node_weight":  10,
+                      "question_count":  4,
+                      "node_score":  60.04,
+                      "details":  [
+                                      {
+                                          "question_id":  "bowel_quality",
+                                          "value":  6,
+                                          "band":  "yellow",
+                                          "risk":  0.545,
+                                          "internal_weight":  21.43,
+                                          "contribution":  11.68
+                                      },
+                                      {
+                                          "question_id":  "urine_quality",
+                                          "value":  7,
+                                          "band":  "yellow",
+                                          "risk":  0.4,
+                                          "internal_weight":  21.43,
+                                          "contribution":  8.57
+                                      },
+                                      {
+                                          "question_id":  "digestion_feeling",
+                                          "value":  5,
+                                          "band":  "yellow",
+                                          "risk":  0.69,
+                                          "internal_weight":  21.43,
+                                          "contribution":  14.79
+                                      },
+                                      {
+                                          "question_id":  "sleep_quality",
+                                          "value":  4,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  35.71,
+                                          "contribution":  25
+                                      }
+                                  ]
+                  },
+                  {
+                      "node":  "tai",
+                      "node_weight":  20,
+                      "question_count":  5,
+                      "node_score":  58.5,
+                      "details":  [
+                                      {
+                                          "question_id":  "workload",
+                                          "value":  8,
+                                          "band":  "red",
+                                          "risk":  0.8,
+                                          "internal_weight":  26.32,
+                                          "contribution":  21.06
+                                      },
+                                      {
+                                          "question_id":  "family_load",
+                                          "value":  5,
+                                          "band":  "yellow",
+                                          "risk":  0.545,
+                                          "internal_weight":  15.79,
+                                          "contribution":  8.61
+                                      },
+                                      {
+                                          "question_id":  "financial_pressure",
+                                          "value":  4,
+                                          "band":  "yellow",
+                                          "risk":  0.4,
+                                          "internal_weight":  15.79,
+                                          "contribution":  6.32
+                                      },
+                                      {
+                                          "question_id":  "illness_load",
+                                          "value":  2,
+                                          "band":  "green",
+                                          "risk":  0.26,
+                                          "internal_weight":  15.79,
+                                          "contribution":  4.11
+                                      },
+                                      {
+                                          "question_id":  "mental_pressure",
+                                          "value":  7,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  26.31,
+                                          "contribution":  18.42
+                                      }
+                                  ]
+                  },
+                  {
+                      "node":  "phuc_hoi",
+                      "node_weight":  10,
+                      "question_count":  3,
+                      "node_score":  76.88,
+                      "details":  [
+                                      {
+                                          "question_id":  "real_rest",
+                                          "value":  3,
+                                          "band":  "red",
+                                          "risk":  0.775,
+                                          "internal_weight":  41.67,
+                                          "contribution":  32.29
+                                      },
+                                      {
+                                          "question_id":  "relax_ability",
+                                          "value":  4,
+                                          "band":  "red",
+                                          "risk":  0.7,
+                                          "internal_weight":  33.33,
+                                          "contribution":  23.33
+                                      },
+                                      {
+                                          "question_id":  "self_time",
+                                          "value":  2,
+                                          "band":  "red",
+                                          "risk":  0.85,
+                                          "internal_weight":  25,
+                                          "contribution":  21.25
+                                      }
+                                  ]
+                  }
+              ]
+}

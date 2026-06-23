@@ -1,0 +1,126 @@
+﻿{
+    "version":  "1.0.0",
+    "generated_from":  "node_engine.json",
+    "rules":  [
+                  {
+                      "node":  "nap",
+                      "low":  {
+                                  "message":  "nap đang suy giảm.",
+                                  "threshold":  40
+                              },
+                      "medium":  {
+                                     "message":  "nap cần chú ý.",
+                                     "threshold":  60
+                                 },
+                      "high":  {
+                                   "message":  "nap đang lệch mạnh.",
+                                   "threshold":  80
+                               }
+                  },
+                  {
+                      "node":  "thich_nghi",
+                      "low":  {
+                                  "message":  "thich_nghi đang suy giảm.",
+                                  "threshold":  40
+                              },
+                      "medium":  {
+                                     "message":  "thich_nghi cần chú ý.",
+                                     "threshold":  60
+                                 },
+                      "high":  {
+                                   "message":  "thich_nghi đang lệch mạnh.",
+                                   "threshold":  80
+                               }
+                  },
+                  {
+                      "node":  "du_tru",
+                      "low":  {
+                                  "message":  "du_tru đang suy giảm.",
+                                  "threshold":  40
+                              },
+                      "medium":  {
+                                     "message":  "du_tru cần chú ý.",
+                                     "threshold":  60
+                                 },
+                      "high":  {
+                                   "message":  "du_tru đang lệch mạnh.",
+                                   "threshold":  80
+                               }
+                  },
+                  {
+                      "node":  "mat_kiem_soat",
+                      "low":  {
+                                  "message":  "mat_kiem_soat đang suy giảm.",
+                                  "threshold":  40
+                              },
+                      "medium":  {
+                                     "message":  "mat_kiem_soat cần chú ý.",
+                                     "threshold":  60
+                                 },
+                      "high":  {
+                                   "message":  "mat_kiem_soat đang lệch mạnh.",
+                                   "threshold":  80
+                               }
+                  },
+                  {
+                      "node":  "hao_mon",
+                      "low":  {
+                                  "message":  "hao_mon đang suy giảm.",
+                                  "threshold":  40
+                              },
+                      "medium":  {
+                                     "message":  "hao_mon cần chú ý.",
+                                     "threshold":  60
+                                 },
+                      "high":  {
+                                   "message":  "hao_mon đang lệch mạnh.",
+                                   "threshold":  80
+                               }
+                  },
+                  {
+                      "node":  "chuyen_hoa",
+                      "low":  {
+                                  "message":  "chuyen_hoa đang suy giảm.",
+                                  "threshold":  40
+                              },
+                      "medium":  {
+                                     "message":  "chuyen_hoa cần chú ý.",
+                                     "threshold":  60
+                                 },
+                      "high":  {
+                                   "message":  "chuyen_hoa đang lệch mạnh.",
+                                   "threshold":  80
+                               }
+                  },
+                  {
+                      "node":  "tai",
+                      "low":  {
+                                  "message":  "tai đang suy giảm.",
+                                  "threshold":  40
+                              },
+                      "medium":  {
+                                     "message":  "tai cần chú ý.",
+                                     "threshold":  60
+                                 },
+                      "high":  {
+                                   "message":  "tai đang lệch mạnh.",
+                                   "threshold":  80
+                               }
+                  },
+                  {
+                      "node":  "phuc_hoi",
+                      "low":  {
+                                  "message":  "phuc_hoi đang suy giảm.",
+                                  "threshold":  40
+                              },
+                      "medium":  {
+                                     "message":  "phuc_hoi cần chú ý.",
+                                     "threshold":  60
+                                 },
+                      "high":  {
+                                   "message":  "phuc_hoi đang lệch mạnh.",
+                                   "threshold":  80
+                               }
+                  }
+              ]
+}

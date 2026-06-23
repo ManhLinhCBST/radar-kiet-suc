@@ -1,0 +1,97 @@
+﻿{
+    "date":  "2026-06-22",
+    "system_score":  66.52,
+    "score_semantics":  "Điểm càng cao nghĩa là rủi ro hao mòn / kiệt sức càng cao.",
+    "diagnostics":  [
+                        {
+                            "node":  "nap",
+                            "name":  "Nạp",
+                            "node_score":  69.42,
+                            "node_weight":  15,
+                            "level":  "medium",
+                            "message":  "Nguồn nạp đang có dấu hiệu thiếu hụt. Cần chú ý ngủ, ăn uống và nước."
+                        },
+                        {
+                            "node":  "thich_nghi",
+                            "name":  "Thích nghi",
+                            "node_score":  72.31,
+                            "node_weight":  10,
+                            "level":  "high",
+                            "message":  "Thích nghi đang yếu. Tải hiện tại có thể đang vượt quá khả năng thích ứng."
+                        },
+                        {
+                            "node":  "du_tru",
+                            "name":  "Dự trữ",
+                            "node_score":  72.88,
+                            "node_weight":  20,
+                            "level":  "high",
+                            "message":  "Dự trữ đang thấp. Pin nền, sức bền và khả năng chịu tải có dấu hiệu suy giảm rõ."
+                        },
+                        {
+                            "node":  "mat_kiem_soat",
+                            "name":  "Mất kiểm soát",
+                            "node_score":  56.67,
+                            "node_weight":  5,
+                            "level":  "medium",
+                            "message":  "Đã có dấu hiệu bù trừ. Cần chú ý caffeine, màn hình, ăn theo cảm xúc, mất ngủ hoặc rượu bia."
+                        },
+                        {
+                            "node":  "hao_mon",
+                            "name":  "Hao mòn",
+                            "node_score":  60.75,
+                            "node_weight":  10,
+                            "level":  "medium",
+                            "message":  "Đã có dấu hiệu hao mòn. Cần theo dõi đau mỏi, não mờ, cáu gắt, lo âu hoặc né giao tiếp."
+                        },
+                        {
+                            "node":  "chuyen_hoa",
+                            "name":  "Chuyển hóa",
+                            "node_score":  60.04,
+                            "node_weight":  10,
+                            "level":  "medium",
+                            "message":  "Chuyển hóa đang dao động. Những gì nạp vào có thể chưa chuyển thành năng lượng ổn định."
+                        },
+                        {
+                            "node":  "tai",
+                            "name":  "Tải",
+                            "node_score":  58.5,
+                            "node_weight":  20,
+                            "level":  "medium",
+                            "message":  "Tải đang ở mức đáng chú ý. Công việc, tâm lý, gia đình hoặc tài chính có thể đang kéo hệ xuống."
+                        },
+                        {
+                            "node":  "phuc_hoi",
+                            "name":  "Phục hồi",
+                            "node_score":  76.88,
+                            "node_weight":  10,
+                            "level":  "high",
+                            "message":  "Phục hồi đang kém rõ. Có thể đang rơi vào trạng thái nghỉ mà không hồi."
+                        }
+                    ],
+    "top_risks":  [
+                      {
+                          "node":  "phuc_hoi",
+                          "name":  "Phục hồi",
+                          "node_score":  76.88,
+                          "node_weight":  10,
+                          "level":  "high",
+                          "message":  "Phục hồi đang kém rõ. Có thể đang rơi vào trạng thái nghỉ mà không hồi."
+                      },
+                      {
+                          "node":  "du_tru",
+                          "name":  "Dự trữ",
+                          "node_score":  72.88,
+                          "node_weight":  20,
+                          "level":  "high",
+                          "message":  "Dự trữ đang thấp. Pin nền, sức bền và khả năng chịu tải có dấu hiệu suy giảm rõ."
+                      },
+                      {
+                          "node":  "thich_nghi",
+                          "name":  "Thích nghi",
+                          "node_score":  72.31,
+                          "node_weight":  10,
+                          "level":  "high",
+                          "message":  "Thích nghi đang yếu. Tải hiện tại có thể đang vượt quá khả năng thích ứng."
+                      }
+                  ]
+}

@@ -1,0 +1,208 @@
+﻿{
+    "version":  "1.0.0",
+    "generated_from":  "question_library.json",
+    "formula":  "weighted_risk_sum",
+    "score_range":  {
+                        "meaning":  "Điểm càng cao nghĩa là nguy cơ hao mòn / kiệt sức càng cao.",
+                        "min":  0,
+                        "max":  100
+                    },
+    "normalization":  {
+                          "low_is_bad":  "risk = 1 - normalized_value",
+                          "high_is_bad":  "risk = normalized_value"
+                      },
+    "rules":  [
+                  {
+                      "question_id":  "sleep_hours",
+                      "node":  "nap",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  4.03
+                  },
+                  {
+                      "question_id":  "food_quality",
+                      "node":  "nap",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  3.23
+                  },
+                  {
+                      "question_id":  "water_intake",
+                      "node":  "nap",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "bowel_quality",
+                      "node":  "chuyen_hoa",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "urine_quality",
+                      "node":  "chuyen_hoa",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "digestion_feeling",
+                      "node":  "chuyen_hoa",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "sleep_quality",
+                      "node":  "chuyen_hoa",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  4.03
+                  },
+                  {
+                      "question_id":  "energy_level",
+                      "node":  "du_tru",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  4.03
+                  },
+                  {
+                      "question_id":  "endurance",
+                      "node":  "du_tru",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  3.23
+                  },
+                  {
+                      "question_id":  "load_capacity",
+                      "node":  "du_tru",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  3.23
+                  },
+                  {
+                      "question_id":  "workload",
+                      "node":  "tai",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  4.03
+                  },
+                  {
+                      "question_id":  "family_load",
+                      "node":  "tai",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "financial_pressure",
+                      "node":  "tai",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "illness_load",
+                      "node":  "tai",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "mental_pressure",
+                      "node":  "tai",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  4.03
+                  },
+                  {
+                      "question_id":  "real_rest",
+                      "node":  "phuc_hoi",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  4.03
+                  },
+                  {
+                      "question_id":  "relax_ability",
+                      "node":  "phuc_hoi",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  3.23
+                  },
+                  {
+                      "question_id":  "self_time",
+                      "node":  "phuc_hoi",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "load_adaptation",
+                      "node":  "thich_nghi",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  3.23
+                  },
+                  {
+                      "question_id":  "getting_stronger",
+                      "node":  "thich_nghi",
+                      "risk_direction":  "low_is_bad",
+                      "weight":  3.23
+                  },
+                  {
+                      "question_id":  "declining_trend",
+                      "node":  "thich_nghi",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  4.03
+                  },
+                  {
+                      "question_id":  "body_pain",
+                      "node":  "hao_mon",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  3.23
+                  },
+                  {
+                      "question_id":  "brain_fog",
+                      "node":  "hao_mon",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  3.23
+                  },
+                  {
+                      "question_id":  "poor_focus",
+                      "node":  "hao_mon",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  4.03
+                  },
+                  {
+                      "question_id":  "irritability",
+                      "node":  "hao_mon",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  3.23
+                  },
+                  {
+                      "question_id":  "anxiety",
+                      "node":  "hao_mon",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  3.23
+                  },
+                  {
+                      "question_id":  "social_avoidance",
+                      "node":  "hao_mon",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "insomnia",
+                      "node":  "mat_kiem_soat",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  4.03
+                  },
+                  {
+                      "question_id":  "caffeine_dependence",
+                      "node":  "mat_kiem_soat",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "alcohol_use",
+                      "node":  "mat_kiem_soat",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "emotional_eating",
+                      "node":  "mat_kiem_soat",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  2.42
+                  },
+                  {
+                      "question_id":  "screen_overuse",
+                      "node":  "mat_kiem_soat",
+                      "risk_direction":  "high_is_bad",
+                      "weight":  2.42
+                  }
+              ]
+}

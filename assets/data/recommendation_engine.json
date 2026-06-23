@@ -1,0 +1,343 @@
+﻿{
+    "version":  "1.0.0",
+    "generated_from":  [
+                           "recommendation_seed.json",
+                           "meaning_engine.json"
+                       ],
+    "score_semantics":  "Điểm càng cao nghĩa là rủi ro hao mòn / kiệt sức càng cao.",
+    "action_policy":  {
+                          "top_node_count":  3,
+                          "actions_per_node":  2,
+                          "max_total_actions":  6
+                      },
+    "nodes":  [
+                  {
+                      "id":  "nap",
+                      "name":  "Nạp",
+                      "node_weight":  15,
+                      "medium_actions":  [
+                                             {
+                                                 "id":  "nap_m_01",
+                                                 "title":  "Bù lại nguồn nạp trong ngày",
+                                                 "detail":  "Hôm nay bạn nên ưu tiên một bữa ăn đủ đạm, tinh bột chậm và rau; tránh để đói kéo dài.",
+                                                 "priority":  "high",
+                                                 "duration_minutes":  20,
+                                                 "effort":  "low"
+                                             },
+                                             {
+                                                 "id":  "nap_m_02",
+                                                 "title":  "Đặt lại nước uống",
+                                                 "detail":  "Uống nước rải đều trong ngày, không dồn nhiều vào cuối ngày.",
+                                                 "priority":  "medium",
+                                                 "duration_minutes":  5,
+                                                 "effort":  "low"
+                                             }
+                                         ],
+                      "high_actions":  [
+                                           {
+                                               "id":  "nap_h_01",
+                                               "title":  "Ưu tiên ngủ bù sớm",
+                                               "detail":  "Tối nay bạn nên giảm màn hình sớm và đi ngủ sớm hơn bình thường ít nhất 30-60 phút.",
+                                               "priority":  "critical",
+                                               "duration_minutes":  60,
+                                               "effort":  "medium"
+                                           },
+                                           {
+                                               "id":  "nap_h_02",
+                                               "title":  "Không dùng caffeine muộn",
+                                               "detail":  "Tránh caffeine sau đầu giờ chiều để không làm hỏng khả năng nạp lại qua giấc ngủ.",
+                                               "priority":  "high",
+                                               "duration_minutes":  1,
+                                               "effort":  "low"
+                                           }
+                                       ]
+                  },
+                  {
+                      "id":  "thich_nghi",
+                      "name":  "Thích nghi",
+                      "node_weight":  10,
+                      "medium_actions":  [
+                                             {
+                                                 "id":  "thich_nghi_m_01",
+                                                 "title":  "Giảm độ dốc trong ngày",
+                                                 "detail":  "Đừng tăng tải thêm hôm nay. Giữ nhịp ổn định để cơ thể có thời gian thích nghi.",
+                                                 "priority":  "high",
+                                                 "duration_minutes":  1,
+                                                 "effort":  "medium"
+                                             },
+                                             {
+                                                 "id":  "thich_nghi_m_02",
+                                                 "title":  "Chọn nhịp đều thay vì cố gắng",
+                                                 "detail":  "Làm việc theo nhịp đều, có nghỉ ngắn, tránh bứt tốc rồi sập pin.",
+                                                 "priority":  "medium",
+                                                 "duration_minutes":  5,
+                                                 "effort":  "low"
+                                             }
+                                         ],
+                      "high_actions":  [
+                                           {
+                                               "id":  "thich_nghi_h_01",
+                                               "title":  "Dừng ép hệ thích nghi",
+                                               "detail":  "Nếu hôm nay càng cố càng đuối, hãy giảm tải thay vì ép bản thân vượt qua.",
+                                               "priority":  "critical",
+                                               "duration_minutes":  1,
+                                               "effort":  "medium"
+                                           },
+                                           {
+                                               "id":  "thich_nghi_h_02",
+                                               "title":  "Ổn định nhịp sinh hoạt",
+                                               "detail":  "Ưu tiên giờ ăn, giờ nghỉ và giờ ngủ đều hơn trong 24 giờ tới.",
+                                               "priority":  "high",
+                                               "duration_minutes":  10,
+                                               "effort":  "medium"
+                                           }
+                                       ]
+                  },
+                  {
+                      "id":  "du_tru",
+                      "name":  "Dự trữ",
+                      "node_weight":  20,
+                      "medium_actions":  [
+                                             {
+                                                 "id":  "du_tru_m_01",
+                                                 "title":  "Giữ lại 20% pin",
+                                                 "detail":  "Hôm nay không dùng hết sức. Chừa lại một phần năng lượng thay vì cố hoàn tất mọi việc.",
+                                                 "priority":  "high",
+                                                 "duration_minutes":  1,
+                                                 "effort":  "medium"
+                                             },
+                                             {
+                                                 "id":  "du_tru_m_02",
+                                                 "title":  "Cắt một việc không thiết yếu",
+                                                 "detail":  "Chọn một việc có thể lùi sang ngày khác để bảo vệ dự trữ.",
+                                                 "priority":  "high",
+                                                 "duration_minutes":  5,
+                                                 "effort":  "medium"
+                                             }
+                                         ],
+                      "high_actions":  [
+                                           {
+                                               "id":  "du_tru_h_01",
+                                               "title":  "Chuyển sang chế độ tiết kiệm pin",
+                                               "detail":  "Trong hôm nay, chỉ làm việc quan trọng nhất; giảm việc xã giao, tranh luận và quyết định nặng.",
+                                               "priority":  "critical",
+                                               "duration_minutes":  10,
+                                               "effort":  "medium"
+                                           },
+                                           {
+                                               "id":  "du_tru_h_02",
+                                               "title":  "Nghỉ chủ động giữa ngày",
+                                               "detail":  "Chèn một khoảng nghỉ 15-20 phút không màn hình để hệ thần kinh hạ tải.",
+                                               "priority":  "high",
+                                               "duration_minutes":  20,
+                                               "effort":  "low"
+                                           }
+                                       ]
+                  },
+                  {
+                      "id":  "mat_kiem_soat",
+                      "name":  "Mất kiểm soát",
+                      "node_weight":  5,
+                      "medium_actions":  [
+                                             {
+                                                 "id":  "mat_kiem_soat_m_01",
+                                                 "title":  "Giảm hành vi bù trừ",
+                                                 "detail":  "Chọn một hành vi bù trừ cần giảm hôm nay: caffeine, màn hình, ăn cảm xúc hoặc thức khuya.",
+                                                 "priority":  "medium",
+                                                 "duration_minutes":  5,
+                                                 "effort":  "medium"
+                                             },
+                                             {
+                                                 "id":  "mat_kiem_soat_m_02",
+                                                 "title":  "Tạo chốt dừng",
+                                                 "detail":  "Đặt một mốc dừng rõ ràng cho màn hình, việc hoặc caffeine trong hôm nay.",
+                                                 "priority":  "medium",
+                                                 "duration_minutes":  3,
+                                                 "effort":  "low"
+                                             }
+                                         ],
+                      "high_actions":  [
+                                           {
+                                               "id":  "mat_kiem_soat_h_01",
+                                               "title":  "Cắt vòng bù trừ",
+                                               "detail":  "Đừng dùng caffeine, màn hình hoặc ăn cảm xúc để kéo năng lượng giả vào cuối ngày.",
+                                               "priority":  "high",
+                                               "duration_minutes":  1,
+                                               "effort":  "medium"
+                                           },
+                                           {
+                                               "id":  "mat_kiem_soat_h_02",
+                                               "title":  "Đưa cơ thể về nhịp chậm",
+                                               "detail":  "Làm một việc chậm và ít kích thích trong 10-15 phút để hạ vòng mất kiểm soát.",
+                                               "priority":  "medium",
+                                               "duration_minutes":  15,
+                                               "effort":  "low"
+                                           }
+                                       ]
+                  },
+                  {
+                      "id":  "hao_mon",
+                      "name":  "Hao mòn",
+                      "node_weight":  10,
+                      "medium_actions":  [
+                                             {
+                                                 "id":  "hao_mon_m_01",
+                                                 "title":  "Giảm ma sát thân-tâm",
+                                                 "detail":  "Hôm nay tránh tranh luận dài, thông tin kích thích và việc cần tập trung sâu quá lâu.",
+                                                 "priority":  "medium",
+                                                 "duration_minutes":  1,
+                                                 "effort":  "medium"
+                                             },
+                                             {
+                                                 "id":  "hao_mon_m_02",
+                                                 "title":  "Quét tín hiệu hao mòn",
+                                                 "detail":  "Ghi nhanh 3 tín hiệu nổi bật nhất: đau mỏi, não mờ, cáu gắt, lo âu hoặc né giao tiếp.",
+                                                 "priority":  "medium",
+                                                 "duration_minutes":  3,
+                                                 "effort":  "low"
+                                             }
+                                         ],
+                      "high_actions":  [
+                                           {
+                                               "id":  "hao_mon_h_01",
+                                               "title":  "Dừng tiêu hao phụ",
+                                               "detail":  "Hôm nay tránh các hoạt động làm hao thêm: thức khuya, lướt màn hình dài, tranh cãi, làm quá sức.",
+                                               "priority":  "critical",
+                                               "duration_minutes":  1,
+                                               "effort":  "medium"
+                                           },
+                                           {
+                                               "id":  "hao_mon_h_02",
+                                               "title":  "Hồi phục bằng thân thể",
+                                               "detail":  "Chọn một hoạt động rất nhẹ: đi bộ chậm, tắm ấm, giãn cơ hoặc nằm nghỉ không màn hình.",
+                                               "priority":  "high",
+                                               "duration_minutes":  15,
+                                               "effort":  "low"
+                                           }
+                                       ]
+                  },
+                  {
+                      "id":  "chuyen_hoa",
+                      "name":  "Chuyển hóa",
+                      "node_weight":  10,
+                      "medium_actions":  [
+                                             {
+                                                 "id":  "chuyen_hoa_m_01",
+                                                 "title":  "Ăn nhẹ, dễ tiêu",
+                                                 "detail":  "Hôm nay nên chọn món ấm, mềm, dễ tiêu; giảm đồ chiên, cay, lạnh hoặc quá ngọt.",
+                                                 "priority":  "medium",
+                                                 "duration_minutes":  20,
+                                                 "effort":  "low"
+                                             },
+                                             {
+                                                 "id":  "chuyen_hoa_m_02",
+                                                 "title":  "Đi bộ sau ăn",
+                                                 "detail":  "Đi bộ chậm 10-15 phút sau bữa ăn chính để hỗ trợ tiêu hóa và chuyển hóa.",
+                                                 "priority":  "medium",
+                                                 "duration_minutes":  15,
+                                                 "effort":  "low"
+                                             }
+                                         ],
+                      "high_actions":  [
+                                           {
+                                               "id":  "chuyen_hoa_h_01",
+                                               "title":  "Giảm tải cho hệ tiêu hóa",
+                                               "detail":  "Trong 24 giờ tới, tránh ăn quá no và tránh ăn sát giờ ngủ.",
+                                               "priority":  "high",
+                                               "duration_minutes":  5,
+                                               "effort":  "low"
+                                           },
+                                           {
+                                               "id":  "chuyen_hoa_h_02",
+                                               "title":  "Theo dõi tín hiệu bài tiết",
+                                               "detail":  "Ghi nhận đại tiện, tiểu tiện và đầy bụng trong ngày để xem chuyển hóa đang lệch theo hướng nào.",
+                                               "priority":  "medium",
+                                               "duration_minutes":  3,
+                                               "effort":  "low"
+                                           }
+                                       ]
+                  },
+                  {
+                      "id":  "tai",
+                      "name":  "Tải",
+                      "node_weight":  20,
+                      "medium_actions":  [
+                                             {
+                                                 "id":  "tai_m_01",
+                                                 "title":  "Giảm một nguồn tải",
+                                                 "detail":  "Chọn một nguồn tải lớn nhất hôm nay và giảm nó một nấc: việc, gia đình, tài chính hoặc tâm lý.",
+                                                 "priority":  "high",
+                                                 "duration_minutes":  10,
+                                                 "effort":  "medium"
+                                             },
+                                             {
+                                                 "id":  "tai_m_02",
+                                                 "title":  "Chia nhỏ việc nặng",
+                                                 "detail":  "Việc nặng nên chia thành khối 25-30 phút, tránh ôm một mạch quá lâu.",
+                                                 "priority":  "medium",
+                                                 "duration_minutes":  5,
+                                                 "effort":  "low"
+                                             }
+                                         ],
+                      "high_actions":  [
+                                           {
+                                               "id":  "tai_h_01",
+                                               "title":  "Chặn quá tải trong hôm nay",
+                                               "detail":  "Không nhận thêm việc mới nếu chưa xử lý xong việc bắt buộc.",
+                                               "priority":  "critical",
+                                               "duration_minutes":  1,
+                                               "effort":  "medium"
+                                           },
+                                           {
+                                               "id":  "tai_h_02",
+                                               "title":  "Đặt ranh giới tối thiểu",
+                                               "detail":  "Nói rõ một giới hạn nhỏ: giờ nghỉ, giờ ngủ, hoặc việc hôm nay không thể làm thêm.",
+                                               "priority":  "high",
+                                               "duration_minutes":  5,
+                                               "effort":  "medium"
+                                           }
+                                       ]
+                  },
+                  {
+                      "id":  "phuc_hoi",
+                      "name":  "Phục hồi",
+                      "node_weight":  10,
+                      "medium_actions":  [
+                                             {
+                                                 "id":  "phuc_hoi_m_01",
+                                                 "title":  "Tạo một phiên hồi phục thật",
+                                                 "detail":  "Dành 15-20 phút không điện thoại, không công việc, không thông tin mới.",
+                                                 "priority":  "high",
+                                                 "duration_minutes":  20,
+                                                 "effort":  "low"
+                                             },
+                                             {
+                                                 "id":  "phuc_hoi_m_02",
+                                                 "title":  "Thả lỏng cơ thể",
+                                                 "detail":  "Làm 5-10 phút thở chậm, giãn cổ vai gáy hoặc nằm thả lỏng.",
+                                                 "priority":  "medium",
+                                                 "duration_minutes":  10,
+                                                 "effort":  "low"
+                                             }
+                                         ],
+                      "high_actions":  [
+                                           {
+                                               "id":  "phuc_hoi_h_01",
+                                               "title":  "Ưu tiên phục hồi trước năng suất",
+                                               "detail":  "Hôm nay mục tiêu chính không phải làm nhiều hơn, mà là giúp hệ hồi lại đủ để không tụt tiếp.",
+                                               "priority":  "critical",
+                                               "duration_minutes":  1,
+                                               "effort":  "medium"
+                                           },
+                                           {
+                                               "id":  "phuc_hoi_h_02",
+                                               "title":  "Cắt màn hình trước ngủ",
+                                               "detail":  "Giảm màn hình 45-60 phút trước ngủ để tăng khả năng hồi phục qua đêm.",
+                                               "priority":  "high",
+                                               "duration_minutes":  60,
+                                               "effort":  "medium"
+                                           }
+                                       ]
+                  }
+              ]
+}
