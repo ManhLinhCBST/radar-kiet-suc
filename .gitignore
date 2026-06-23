@@ -44,3 +44,6 @@ _milestones/
 # Temporary backup files
 *_backup_*
 *backup*
+
+# Local release packages
+release/
