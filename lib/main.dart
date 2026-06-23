@@ -211,6 +211,17 @@ class _CheckinInputPageState extends State<CheckinInputPage> {
             title: const Text('Radar Kiệt Sức'),
             actions: [
               IconButton(
+                tooltip: 'Cách đọc chỉ số',
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const HelpPage(),
+                    ),
+                  );
+                },
+                icon: const Icon(Icons.help_outline),
+              ),
+              IconButton(
                 tooltip: 'Lịch sử',
                 onPressed: () async {
                   final navigator = Navigator.of(context);
@@ -1160,4 +1171,100 @@ String _formatValue(double value) {
 
 
 
+
+
+class HelpPage extends StatelessWidget {
+  const HelpPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Cách đọc chỉ số'),
+      ),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: const [
+          _HelpBlock(
+            title: 'Chỉ số hao mòn là gì?',
+            body: 'Đây là chỉ số ước lượng mức hao mòn của hệ trong ngày. Điểm càng cao nghĩa là hệ đang bị kéo nhiều hơn bởi tải, thiếu hồi phục, thiếu dự trữ hoặc mất cân bằng nhịp sống.',
+          ),
+          _HelpBlock(
+            title: 'Cách đọc điểm 0–100',
+            body: '0–39 là vùng tương đối nhẹ. 40–69 là vùng cần chú ý. 70–100 là vùng căng, nên giảm tải và tăng hồi phục. Đây không phải chẩn đoán bệnh, mà là radar giúp nhận biết xu hướng.',
+          ),
+          _HelpBlock(
+            title: 'Vì sao điểm cao là xấu?',
+            body: 'Trong app này, điểm không phải “pin còn lại”, mà là “mức hao mòn”. Điểm cao nghĩa là hệ đang chịu nhiều áp lực hơn khả năng hồi phục.',
+          ),
+          _HelpBlock(
+            title: 'Node là gì?',
+            body: 'Node là các trục chính của hệ: nạp, chuyển hóa, dự trữ, tải, phục hồi, thích nghi, hao mòn và mất kiểm soát. Node nào điểm cao hơn thì node đó đang góp phần kéo hệ lệch nhiều hơn.',
+          ),
+          _HelpBlock(
+            title: 'Cách đọc xu hướng',
+            body: 'Xu hướng so sánh điểm hôm nay với lần check-in trước. Nếu điểm giảm rõ, hệ đang hồi. Nếu điểm tăng rõ, hệ đang suy giảm. Nếu không đổi nhiều, hệ tạm ổn định.',
+          ),
+          _HelpBlock(
+            title: 'Cách dùng khuyến nghị',
+            body: 'Khuyến nghị là việc nhỏ nên làm trong ngày, ưu tiên giảm tải và tăng hồi phục. Không cần làm tất cả. Chọn 1–2 việc dễ làm nhất nhưng làm thật.',
+          ),
+          _HelpBlock(
+            title: 'Giới hạn an toàn',
+            body: 'App không thay thế khám bệnh, không thay thế xét nghiệm, không thay thế tư vấn y tế. Nếu có triệu chứng nặng, kéo dài hoặc bất thường, cần gặp bác sĩ hoặc cơ sở y tế.',
+          ),
+          _HelpBlock(
+            title: 'Khi nào không tự xử lý?',
+            body: 'Nếu có đau ngực, khó thở, ngất, yếu liệt, lú lẫn, sốt cao kéo dài, chảy máu bất thường, đau dữ dội, ý nghĩ tự hại bản thân hoặc tình trạng xấu nhanh, cần đi viện hoặc gọi cấp cứu.',
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _HelpBlock extends StatelessWidget {
+  const _HelpBlock({
+    required this.title,
+    required this.body,
+  });
+
+  final String title;
+  final String body;
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 0,
+      color: Colors.white,
+      margin: const EdgeInsets.only(bottom: 10),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(18),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: TextStyle(
+                fontWeight: FontWeight.w900,
+                fontSize: 16,
+              ),
+            ),
+            SizedBox(height: 8),
+            Text(
+              body,
+              style: TextStyle(
+                height: 1.45,
+                color: Colors.black87,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 
