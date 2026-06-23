@@ -1,0 +1,15 @@
+﻿PRIVACY POLICY PUBLIC URL TEMPLATE
+
+Sau khi bật GitHub Pages từ thư mục /docs, URL thường có dạng:
+
+https://<github-username>.github.io/<repo-name>/privacy-policy.html
+
+Ví dụ nếu GitHub username là tuequangedu và repo là radar-kiet-suc:
+
+https://tuequangedu.github.io/radar-kiet-suc/privacy-policy.html
+
+URL tiếng Anh:
+
+https://tuequangedu.github.io/radar-kiet-suc/privacy-policy-en.html
+
+Dán URL tiếng Việt vào Play Console mục Privacy policy.

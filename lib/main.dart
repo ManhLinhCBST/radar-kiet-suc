@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import 'app_runtime.dart';
 import 'local_history.dart';
+import 'privacy_policy_text.dart';
 
 void main() {
   runApp(const RadarKietSucApp());
@@ -210,6 +211,17 @@ class _CheckinInputPageState extends State<CheckinInputPage> {
           appBar: AppBar(
             title: const Text('Radar Kiệt Sức'),
             actions: [
+              IconButton(
+                tooltip: 'Quyền riêng tư',
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const PrivacyPolicyPage(),
+                    ),
+                  );
+                },
+                icon: const Icon(Icons.privacy_tip_outlined),
+              ),
               IconButton(
                 tooltip: 'Cách đọc chỉ số',
                 onPressed: () {
@@ -1317,5 +1329,33 @@ class _HelpBlock extends StatelessWidget {
 
 
 
+
+
+
+class PrivacyPolicyPage extends StatelessWidget {
+  const PrivacyPolicyPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Quyền riêng tư'),
+      ),
+      body: const SafeArea(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16),
+          child: SelectableText(
+            privacyPolicyViText,
+            style: TextStyle(
+              height: 1.45,
+              fontSize: 15,
+              color: Colors.black87,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 
