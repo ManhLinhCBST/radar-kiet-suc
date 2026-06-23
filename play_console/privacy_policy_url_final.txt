@@ -1,0 +1,7 @@
+﻿PRIVACY_POLICY_URL=https://ManhLinhCBST.github.io/radar-kiet-suc/privacy-policy.html
+PRIVACY_POLICY_URL_EN=https://ManhLinhCBST.github.io/radar-kiet-suc/privacy-policy-en.html
+CREATED_AT=2026-06-23 13:00:47
+USE_IN_PLAY_CONSOLE=YES
+APP_PACKAGE=vn.mlcbst.radarkietsuc
+APP_NAME=Radar Kiệt Sức
+GITHUB_REPO=https://github.com/ManhLinhCBST/radar-kiet-suc.git
