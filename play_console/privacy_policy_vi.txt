@@ -1,17 +1,19 @@
 ﻿CHÍNH SÁCH QUYỀN RIÊNG TƯ
 Ứng dụng: Radar Kiệt Sức
+Package: vn.mlcbst.radarkietsuc
 Phiên bản: 1.0.0
-Cập nhật: 2026-06-23
+Ngày cập nhật: 2026-06-23
+Liên hệ: tuequangedu@gmail.com
 
 1. Giới thiệu
 
 Radar Kiệt Sức là ứng dụng hỗ trợ người dùng tự theo dõi mức hao mòn, tải, phục hồi và xu hướng sức khỏe hằng ngày thông qua các câu hỏi tự đánh giá.
 
-Ứng dụng không thay thế bác sĩ, không đưa ra chẩn đoán y khoa, không kê đơn, không điều trị bệnh và không thay thế việc khám bệnh hoặc xét nghiệm.
+Ứng dụng không phải thiết bị y tế, không thay thế bác sĩ, không đưa ra chẩn đoán y khoa, không kê đơn, không điều trị bệnh và không thay thế việc khám bệnh hoặc xét nghiệm.
 
 2. Dữ liệu ứng dụng xử lý
 
-Ứng dụng có thể xử lý các nhóm dữ liệu sau do người dùng tự nhập:
+Ứng dụng có thể xử lý các nhóm dữ liệu sau do người dùng tự nhập hoặc do ứng dụng tính toán trên thiết bị:
 
 - Câu trả lời check-in hằng ngày.
 - Điểm hao mòn được tính từ câu trả lời.
@@ -47,23 +49,31 @@ Radar Kiệt Sức có thể xử lý dữ liệu tự đánh giá liên quan đ
 
 Ứng dụng không yêu cầu quyền truy cập Health Connect, không đọc dữ liệu từ thiết bị y tế, không đọc hồ sơ bệnh án, không đọc kết quả xét nghiệm và không kết nối với bệnh viện hoặc cơ sở y tế.
 
-7. Lưu trữ và xóa dữ liệu
+7. Quyền truy cập thiết bị
+
+Ở phiên bản hiện tại, ứng dụng không yêu cầu quyền truy cập vị trí, danh bạ, camera, microphone, ảnh, video, SMS, nhật ký cuộc gọi hoặc dữ liệu thiết bị y tế.
+
+8. Lưu trữ và xóa dữ liệu
 
 Dữ liệu lịch sử được lưu trên thiết bị của người dùng.
 
 Người dùng có thể xóa lịch sử trong ứng dụng. Người dùng cũng có thể gỡ cài đặt ứng dụng để xóa dữ liệu cục bộ liên quan khỏi thiết bị theo cơ chế của hệ điều hành.
 
-8. Trẻ em
+9. Trẻ em
 
 Ứng dụng không được thiết kế dành riêng cho trẻ em. Ứng dụng hướng tới người dùng trưởng thành muốn tự theo dõi trạng thái hao mòn và phục hồi của bản thân.
 
-9. Giới hạn an toàn
+10. Giới hạn an toàn
 
 Ứng dụng chỉ có mục đích hỗ trợ tự quan sát và cải thiện lối sống.
 
 Nếu người dùng có đau ngực, khó thở, ngất, yếu liệt, lú lẫn, sốt cao kéo dài, chảy máu bất thường, đau dữ dội, ý nghĩ tự hại bản thân hoặc tình trạng xấu nhanh, người dùng cần đi viện hoặc gọi cấp cứu.
 
-10. Liên hệ
+11. Thay đổi chính sách
+
+Chính sách quyền riêng tư có thể được cập nhật khi ứng dụng thay đổi tính năng. Phiên bản mới sẽ được công bố tại nơi lưu trữ chính sách quyền riêng tư của ứng dụng.
+
+12. Liên hệ
 
 Nếu có câu hỏi về quyền riêng tư hoặc dữ liệu, vui lòng liên hệ:
 

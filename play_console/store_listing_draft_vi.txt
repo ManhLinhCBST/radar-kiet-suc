@@ -9,6 +9,8 @@ Theo dõi hao mòn, phục hồi và xu hướng sức khỏe hằng ngày.
 Full description:
 Radar Kiệt Sức giúp bạn tự check-in trạng thái cơ thể mỗi ngày, ước lượng mức hao mòn, xem các trục đang lệch và nhận gợi ý hồi phục cơ bản.
 
+Ứng dụng phù hợp cho người muốn quan sát nhịp sống, tải công việc, mức phục hồi và xu hướng hao mòn của bản thân theo thời gian.
+
 Tính năng chính:
 - Check-in nhanh hoặc full.
 - Tính chỉ số hao mòn trong ngày.
@@ -18,6 +20,9 @@ Tính năng chính:
 - Xuất lịch sử dưới dạng JSON vào clipboard.
 - Có trang giải thích cách đọc chỉ số.
 
+Cách hiểu chỉ số:
+Điểm trong app là mức hao mòn ước lượng, không phải chẩn đoán bệnh. Điểm càng cao nghĩa là hệ đang chịu nhiều tải hơn hoặc khả năng phục hồi đang kém hơn.
+
 Lưu ý an toàn:
 Radar Kiệt Sức không phải thiết bị y tế, không chẩn đoán bệnh, không điều trị bệnh và không thay thế bác sĩ. Nếu có triệu chứng nặng, bất thường hoặc xấu nhanh, hãy liên hệ cơ sở y tế hoặc gọi cấp cứu.
 
@@ -26,3 +31,10 @@ Health & Fitness
 
 Tags gợi ý:
 wellness, self tracking, recovery, fatigue, body battery, health diary
+
+Suggested content rating notes:
+- Không có nội dung bạo lực.
+- Không có nội dung tình dục.
+- Không có cờ bạc.
+- Không có mua bán thuốc.
+- Không có chẩn đoán hoặc điều trị y tế.

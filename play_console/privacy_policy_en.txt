@@ -1,0 +1,80 @@
+﻿PRIVACY POLICY
+App: Radar Kiệt Sức
+Package: vn.mlcbst.radarkietsuc
+Version: 1.0.0
+Last updated: 2026-06-23
+Contact: tuequangedu@gmail.com
+
+1. Introduction
+
+Radar Kiệt Sức is a self-tracking wellness app that helps users reflect on daily fatigue, load, recovery, and body wear patterns through self-assessment questions.
+
+The app is not a medical device. It does not replace doctors, does not provide medical diagnosis, does not prescribe medication, does not treat disease, and does not replace medical examination or laboratory testing.
+
+2. Data processed by the app
+
+The app may process the following data entered by the user or calculated locally on the device:
+
+- Daily check-in answers.
+- Body wear score calculated from the answers.
+- Node results such as intake, metabolism, reserve, load, recovery, adaptation, wear, and loss of control.
+- Check-in history stored locally on the device.
+- JSON history data intentionally exported by the user to the clipboard.
+
+3. Does the app send data to our server?
+
+In the current version, Radar Kiệt Sức does not send check-in data to our server.
+
+History data is stored locally on the user's device. When the user uses the JSON export feature, the data is copied to the device clipboard so that the user can decide whether to share it.
+
+4. Does the app share data with third parties?
+
+In the current version, the app does not automatically share check-in data with third parties.
+
+If the user manually copies exported JSON data and sends it through messaging apps, email, or other apps, that sharing is controlled by the user and is outside the direct control of Radar Kiệt Sức.
+
+5. Purpose of data processing
+
+Data is used to:
+
+- Calculate the daily body wear score.
+- Display node-level interpretations.
+- Suggest basic recovery actions.
+- Compare trends between check-ins.
+- Allow the user to export history as JSON.
+
+6. Sensitive health-related data
+
+Radar Kiệt Sức may process self-assessment data related to fatigue, recovery, load, sleep, daily rhythm, and body state.
+
+The app does not request Health Connect access, does not read data from medical devices, does not read medical records, does not read laboratory results, and does not connect to hospitals or healthcare providers.
+
+7. Device permissions
+
+In the current version, the app does not request access to location, contacts, camera, microphone, photos, videos, SMS, call logs, or medical device data.
+
+8. Data storage and deletion
+
+History data is stored locally on the user's device.
+
+The user can delete history inside the app. The user can also uninstall the app to remove locally stored app data according to the operating system behavior.
+
+9. Children
+
+The app is not designed specifically for children. It is intended for adult users who want to self-track their body wear and recovery patterns.
+
+10. Safety limitation
+
+The app is intended for self-reflection and lifestyle awareness only.
+
+If the user has chest pain, shortness of breath, fainting, weakness or paralysis, confusion, persistent high fever, abnormal bleeding, severe pain, thoughts of self-harm, or rapidly worsening condition, the user should seek medical care or emergency assistance.
+
+11. Changes to this policy
+
+This privacy policy may be updated when app features change. The new version will be published at the app's privacy policy location.
+
+12. Contact
+
+For privacy or data questions, please contact:
+
+Email: tuequangedu@gmail.com

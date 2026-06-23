@@ -3,57 +3,126 @@
 Package: vn.mlcbst.radarkietsuc
 Version: 1.0.0+1
 
+MỤC TIÊU:
+Tài liệu này dùng để hỗ trợ điền mục Data safety trong Google Play Console.
+
 1. App có thu thập dữ liệu không?
 
 Đề xuất khai báo thận trọng:
 
-- App xử lý dữ liệu người dùng nhập trong thiết bị.
+- App xử lý dữ liệu người dùng tự nhập trong thiết bị.
 - App không gửi dữ liệu lên máy chủ ở phiên bản hiện tại.
 - App không tự động chia sẻ dữ liệu với bên thứ ba.
 - App có thể xử lý dữ liệu sức khỏe/tự đánh giá sức khỏe theo nghĩa người dùng tự nhập để tính chỉ số hao mòn.
 
 2. Data types có thể liên quan
 
-Health and fitness:
-- Health info: có, vì người dùng tự nhập trạng thái mệt, phục hồi, tải, giấc ngủ, trạng thái cơ thể.
-- Fitness info: không, nếu app không theo dõi bài tập, bước chân, nhịp tim, calo.
+A. Health and fitness
 
-App activity:
-- App interactions: có thể không khai nếu không gửi ra ngoài.
-- In-app search history: không.
-- Installed apps: không.
+Health info:
+- Có liên quan.
+- Lý do: người dùng tự nhập trạng thái mệt, phục hồi, tải, giấc ngủ, nhịp sinh hoạt và trạng thái cơ thể.
+- Mục đích: App functionality / health self-tracking.
 
-Personal info:
-- Name: không.
-- Email address: không trong app hiện tại.
-- User IDs: không.
-- Address: không.
-- Phone number: không.
+Fitness info:
+- Không, nếu app không theo dõi bài tập, bước chân, nhịp tim, calo hoặc hoạt động thể thao.
 
-Location:
+B. Personal info
+
+Name:
 - Không.
 
-Financial info:
+Email address:
+- Không trong app hiện tại.
+
+User IDs:
 - Không.
 
-Photos and videos:
+Address:
 - Không.
 
-Audio:
+Phone number:
 - Không.
+
+C. Location
+
+Approximate location:
+- Không.
+
+Precise location:
+- Không.
+
+D. Financial info
+
+Payment info:
+- Không.
+
+Purchase history:
+- Không ở phiên bản hiện tại nếu chưa tích hợp thanh toán hoặc subscription.
+
+E. Photos and videos
+
+Photos:
+- Không.
+
+Videos:
+- Không.
+
+F. Audio
+
+Voice or sound recordings:
+- Không.
+
+Music files:
+- Không.
+
+G. Files and docs
 
 Files and docs:
-- Không, trừ khi sau này app cho import/export file trực tiếp.
+- Không ở phiên bản hiện tại.
+- Ghi chú: App có export JSON vào clipboard, chưa xuất file trực tiếp.
+
+H. Calendar
+
+Calendar events:
+- Không.
+
+I. Contacts
+
+Contacts:
+- Không.
+
+J. App activity
+
+App interactions:
+- Không khai là thu thập nếu app không gửi dữ liệu này ra khỏi thiết bị.
+- Nếu sau này thêm analytics thì phải khai lại.
+
+In-app search history:
+- Không.
+
+Installed apps:
+- Không.
+
+K. Web browsing
+
+Web browsing history:
+- Không.
+
+L. Device or other IDs
 
 Device or other IDs:
-- Không, nếu app không dùng analytics/ads.
+- Không nếu app không dùng ads, analytics hoặc tracking SDK.
 
 3. Data sharing
 
 - Không tự động chia sẻ dữ liệu với bên thứ ba.
 - Người dùng có thể tự copy JSON vào clipboard và tự chia sẻ ngoài ứng dụng.
+- Đây là hành động chủ động của người dùng.
 
 4. Data collection purpose
+
+Nếu Play Console yêu cầu chọn mục đích:
 
 - App functionality.
 - Health/self-tracking functionality.
@@ -62,9 +131,20 @@ Device or other IDs:
 5. Data encryption in transit
 
 - Không áp dụng nếu app không truyền dữ liệu qua mạng.
-- Nếu Play Console bắt buộc chọn, cần khai đúng theo việc app có truyền dữ liệu hay không.
+- Nếu sau này có server/API, phải dùng HTTPS và cập nhật lại khai báo.
 
 6. Data deletion
 
 - Người dùng có thể xóa lịch sử trong app.
 - Người dùng có thể gỡ app để xóa dữ liệu cục bộ.
+- Nếu sau này có tài khoản/server, phải bổ sung cơ chế xóa tài khoản và dữ liệu từ server.
+
+7. Ghi chú quan trọng
+
+Không khai rằng app không xử lý dữ liệu sức khỏe nếu trong app có câu hỏi về mệt mỏi, phục hồi, giấc ngủ, tải hoặc trạng thái cơ thể.
+
+Nên khai theo hướng:
+- Có xử lý dữ liệu health self-assessment.
+- Không gửi server.
+- Không tự động chia sẻ.
+- Lưu cục bộ.

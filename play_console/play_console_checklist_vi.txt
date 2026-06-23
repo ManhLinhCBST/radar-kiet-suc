@@ -1,0 +1,71 @@
+﻿PLAY CONSOLE CHECKLIST — RADAR KIỆT SỨC
+
+A. App identity
+
+[ ] App name: Radar Kiệt Sức
+[ ] Package name: vn.mlcbst.radarkietsuc
+[ ] Version: 1.0.0+1
+[ ] Category: Health & Fitness
+[ ] App type: App
+[ ] Free/Paid: Free ở giai đoạn đầu
+
+B. Release
+
+[ ] Upload app-release.aab
+[ ] Track đầu tiên: Internal testing
+[ ] Không đẩy Production ngay
+[ ] Mời tester bằng email
+[ ] Test cài đặt từ Play Store internal link
+
+C. Store listing
+
+[ ] Short description đã điền
+[ ] Full description đã điền
+[ ] App icon đã có
+[ ] Feature graphic đã có
+[ ] Screenshots điện thoại đã có
+[ ] Privacy policy URL đã có
+
+D. App content
+
+[ ] Privacy policy đã nhập URL
+[ ] Data safety đã điền
+[ ] Health apps declaration đã điền
+[ ] Ads: No, nếu chưa có ads
+[ ] App access: No login required
+[ ] Target audience: người lớn/general audience, không thiết kế riêng cho trẻ em
+[ ] Content rating questionnaire đã hoàn thành
+[ ] Government apps: No
+[ ] News apps: No
+[ ] COVID-19 apps: No
+
+E. Data Safety định hướng
+
+[ ] Có xử lý dữ liệu health self-assessment
+[ ] Không gửi dữ liệu lên server ở phiên bản hiện tại
+[ ] Không tự động chia sẻ dữ liệu với bên thứ ba
+[ ] Dữ liệu lưu local trên thiết bị
+[ ] Người dùng có thể xóa lịch sử trong app
+[ ] Người dùng có thể export JSON thủ công
+
+F. Health declaration định hướng
+
+[ ] Wellness / self-tracking
+[ ] Không chẩn đoán
+[ ] Không điều trị
+[ ] Không kê đơn
+[ ] Không thay thế bác sĩ
+[ ] Không thiết bị y tế
+[ ] Không Health Connect
+[ ] Không hồ sơ bệnh án
+[ ] Không xét nghiệm
+
+G. Trước khi gửi review
+
+[ ] Chạy flutter analyze
+[ ] Chạy audit_play_ready_v42.ps1
+[ ] Build appbundle release
+[ ] Mở app trên emulator hoặc máy thật
+[ ] Kiểm tra trang Cách đọc chỉ số
+[ ] Kiểm tra disclaimer an toàn
+[ ] Kiểm tra export JSON

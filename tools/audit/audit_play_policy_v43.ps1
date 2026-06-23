@@ -11,11 +11,14 @@ $missing = @()
 
 $files = @(
     ".\play_console\privacy_policy_vi.txt",
+    ".\play_console\privacy_policy_en.txt",
     ".\play_console\data_safety_draft_vi.txt",
     ".\play_console\health_declaration_draft_vi.txt",
-    ".\play_console\store_listing_draft_vi.txt"
+    ".\play_console\store_listing_draft_vi.txt",
+    ".\play_console\play_console_checklist_vi.txt"
 )
 
+Write-Host "FILES"
 foreach ($file in $files) {
     if (Test-Path $file) {
         Write-Host "OK   $file"
@@ -27,23 +30,35 @@ foreach ($file in $files) {
     }
 }
 
-$privacy = Get-Content .\play_console\privacy_policy_vi.txt -Raw
+$privacyVi = Get-Content .\play_console\privacy_policy_vi.txt -Raw
+$privacyEn = Get-Content .\play_console\privacy_policy_en.txt -Raw
 $data = Get-Content .\play_console\data_safety_draft_vi.txt -Raw
 $health = Get-Content .\play_console\health_declaration_draft_vi.txt -Raw
 $listing = Get-Content .\play_console\store_listing_draft_vi.txt -Raw
+$checklist = Get-Content .\play_console\play_console_checklist_vi.txt -Raw
+
+Write-Host ""
+Write-Host "CONTENT CHECKS"
 
 $checks = @(
-    @{ Name = "privacy app name"; Body = $privacy; Text = "Radar Kiệt Sức" },
-    @{ Name = "privacy no diagnosis"; Body = $privacy; Text = "không đưa ra chẩn đoán y khoa" },
-    @{ Name = "privacy local storage"; Body = $privacy; Text = "lưu cục bộ trên thiết bị" },
-    @{ Name = "privacy contact email"; Body = $privacy; Text = "tuequangedu@gmail.com" },
+    @{ Name = "privacy vi app name"; Body = $privacyVi; Text = "Radar Kiệt Sức" },
+    @{ Name = "privacy vi package"; Body = $privacyVi; Text = "vn.mlcbst.radarkietsuc" },
+    @{ Name = "privacy vi no diagnosis"; Body = $privacyVi; Text = "không đưa ra chẩn đoán y khoa" },
+    @{ Name = "privacy vi local storage"; Body = $privacyVi; Text = "lưu cục bộ trên thiết bị" },
+    @{ Name = "privacy vi contact email"; Body = $privacyVi; Text = "tuequangedu@gmail.com" },
+    @{ Name = "privacy en app name"; Body = $privacyEn; Text = "Radar Kiệt Sức" },
+    @{ Name = "privacy en no medical device"; Body = $privacyEn; Text = "not a medical device" },
     @{ Name = "data package"; Body = $data; Text = "vn.mlcbst.radarkietsuc" },
     @{ Name = "data no server"; Body = $data; Text = "không gửi dữ liệu lên máy chủ" },
     @{ Name = "data no sharing"; Body = $data; Text = "không tự động chia sẻ" },
+    @{ Name = "data health self assessment"; Body = $data; Text = "health self-assessment" },
     @{ Name = "health wellness"; Body = $health; Text = "Wellness" },
-    @{ Name = "health no treatment"; Body = $health; Text = "Không" },
+    @{ Name = "health no diagnosis"; Body = $health; Text = "Không" },
+    @{ Name = "health no health connect"; Body = $health; Text = "Health Connect" },
     @{ Name = "listing short"; Body = $listing; Text = "Theo dõi hao mòn" },
-    @{ Name = "listing safety"; Body = $listing; Text = "không thay thế bác sĩ" }
+    @{ Name = "listing safety"; Body = $listing; Text = "không thay thế bác sĩ" },
+    @{ Name = "checklist package"; Body = $checklist; Text = "vn.mlcbst.radarkietsuc" },
+    @{ Name = "checklist internal testing"; Body = $checklist; Text = "Internal testing" }
 )
 
 foreach ($check in $checks) {

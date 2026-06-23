@@ -1,14 +1,20 @@
 ﻿HEALTH APPS DECLARATION DRAFT
 Ứng dụng: Radar Kiệt Sức
 Package: vn.mlcbst.radarkietsuc
+Version: 1.0.0+1
+
+MỤC TIÊU:
+Tài liệu này dùng để hỗ trợ điền Health Apps declaration trong Google Play Console.
 
 1. App có tính năng sức khỏe không?
 
-Có. App hỗ trợ người dùng tự theo dõi trạng thái hao mòn, tải, phục hồi và xu hướng sức khỏe hằng ngày.
+Có.
+
+Radar Kiệt Sức hỗ trợ người dùng tự theo dõi trạng thái hao mòn, tải, phục hồi và xu hướng sức khỏe hằng ngày thông qua các câu hỏi tự đánh giá.
 
 2. Loại app đề xuất
 
-Health and Fitness / Wellness / Self-tracking.
+Health & Fitness / Wellness / Self-tracking.
 
 3. App có chẩn đoán bệnh không?
 
@@ -26,10 +32,51 @@ Không.
 
 Không.
 
-7. App có kết nối thiết bị y tế, Health Connect, hồ sơ bệnh án hoặc dữ liệu xét nghiệm không?
+7. App có đưa ra khuyến nghị y khoa cá nhân hóa để điều trị bệnh không?
+
+Không.
+
+Khuyến nghị trong app là gợi ý hồi phục/lối sống cơ bản, không phải phác đồ điều trị bệnh.
+
+8. App có kết nối thiết bị y tế không?
 
 Không ở phiên bản hiện tại.
 
-8. Mô tả ngắn để khai báo
+9. App có dùng Health Connect không?
 
-Radar Kiệt Sức là ứng dụng tự theo dõi wellness giúp người dùng check-in trạng thái hằng ngày, tính chỉ số hao mòn, xem xu hướng phục hồi/suy giảm và nhận gợi ý hồi phục cơ bản. Ứng dụng không chẩn đoán, không điều trị và không thay thế bác sĩ.
+Không ở phiên bản hiện tại.
+
+10. App có đọc hồ sơ bệnh án, kết quả xét nghiệm hoặc dữ liệu từ bệnh viện không?
+
+Không.
+
+11. App có quản lý thuốc không?
+
+Không.
+
+12. App có phục vụ cấp cứu hoặc theo dõi bệnh nguy hiểm không?
+
+Không.
+
+13. Mô tả ngắn để khai báo
+
+Radar Kiệt Sức là ứng dụng wellness/self-tracking giúp người dùng check-in trạng thái hằng ngày, tính chỉ số hao mòn, xem xu hướng phục hồi/suy giảm và nhận gợi ý hồi phục cơ bản. Ứng dụng không chẩn đoán, không điều trị và không thay thế bác sĩ.
+
+14. Câu disclaimer nên xuất hiện trong app và store listing
+
+Radar Kiệt Sức không phải thiết bị y tế, không chẩn đoán bệnh, không điều trị bệnh và không thay thế bác sĩ. Nếu có triệu chứng nặng, bất thường hoặc xấu nhanh, hãy liên hệ cơ sở y tế hoặc gọi cấp cứu.
+
+15. Ghi chú khi điền Play Console
+
+Nên khai app thuộc nhóm:
+- Health & Fitness
+- General wellness
+- Self-tracking
+
+Không nên khai:
+- Medical diagnosis
+- Disease treatment
+- Medication management
+- Healthcare service management
+- Emergency or critical care
+- Medical device integration
