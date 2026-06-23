@@ -1,5 +1,7 @@
-package com.example.body_battery
+﻿package vn.mlcbst.radarkietsuc
 
 import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity : FlutterActivity()
+
+
