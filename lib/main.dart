@@ -366,8 +366,8 @@ class _IntroCard extends StatelessWidget {
               children: [
                 _SoftChip(text: modeText),
                 _SoftChip(text: 'Lịch sử $historyCount ngày'),
-                _SoftChip(text: 'Observation ${runtime.observationRules.length} rule'),
-                _SoftChip(text: 'Node ${runtime.nodeRules.length} rule'),
+                _SoftChip(text: 'Quan sát ${runtime.observationRules.length} luật'),
+                _SoftChip(text: 'Trục ${runtime.nodeRules.length} luật'),
               ],
             ),
             const SizedBox(height: 12),
@@ -697,7 +697,7 @@ class HistoryPage extends StatelessWidget {
             icon: const Icon(Icons.ios_share),
           ),
           IconButton(
-            tooltip: 'Tạo dữ liệu mẫu 3 ngày',
+            tooltip: 'Tạo dữ liệu mẫu kiểm thử 3 ngày',
             onPressed: () async {
               final navigator = Navigator.of(context);
 
@@ -1017,10 +1017,13 @@ class _ActionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final effort = _vnEffort(action.effort);
+    final priority = _vnPriority(action.priority);
+
     final meta = <String>[
       if (action.durationMinutes > 0) '${action.durationMinutes} phút',
-      if (action.effort.isNotEmpty) 'mức ${action.effort}',
-      if (action.priority.isNotEmpty) action.priority,
+      if (effort.isNotEmpty) 'mức $effort',
+      if (priority.isNotEmpty) priority,
     ].join(' • ');
 
     return Card(
@@ -1130,6 +1133,49 @@ class _SoftChip extends StatelessWidget {
   }
 }
 
+String _vnEffort(String value) {
+  if (value == 'low') {
+    return 'nhẹ';
+  }
+
+  if (value == 'medium') {
+    return 'vừa';
+  }
+
+  if (value == 'high') {
+    return 'cao';
+  }
+
+  if (value.trim().isEmpty) {
+    return '';
+  }
+
+  return value;
+}
+
+String _vnPriority(String value) {
+  if (value == 'critical') {
+    return 'rất quan trọng';
+  }
+
+  if (value == 'high') {
+    return 'quan trọng';
+  }
+
+  if (value == 'medium') {
+    return 'vừa';
+  }
+
+  if (value == 'low') {
+    return 'thấp';
+  }
+
+  if (value.trim().isEmpty) {
+    return '';
+  }
+
+  return value;
+}
 String _trajectoryTitle(String state) {
   if (state == 'recovering') {
     return 'Đang hồi phục rõ';
@@ -1267,4 +1313,9 @@ class _HelpBlock extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
 
