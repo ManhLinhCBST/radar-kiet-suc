@@ -195,7 +195,7 @@ class _CheckinInputPageState extends State<CheckinInputPage> {
             body: Padding(
               padding: const EdgeInsets.all(16),
               child: Text(
-                'Không tải được Runtime V3:\n${snapshot.error}',
+                'Không tải được dữ liệu ứng dụng:\n${snapshot.error}',
                 style: const TextStyle(fontSize: 16),
               ),
             ),
@@ -365,7 +365,7 @@ class _IntroCard extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              'Runtime V3: đọc engine JSON, chấm điểm thật, lưu lịch sử trong máy và đọc xu hướng hồi/suy giảm.',
+              'Check-in nhanh mỗi ngày để nhìn mức hao mòn, khả năng hồi phục và xu hướng cơ thể của bạn.',
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     height: 1.4,
                     color: Colors.black87,
@@ -378,8 +378,8 @@ class _IntroCard extends StatelessWidget {
               children: [
                 _SoftChip(text: modeText),
                 _SoftChip(text: 'Lịch sử $historyCount ngày'),
-                _SoftChip(text: 'Quan sát ${runtime.observationRules.length} luật'),
-                _SoftChip(text: 'Trục ${runtime.nodeRules.length} luật'),
+                _SoftChip(text: '${runtime.observationRules.length} câu quan sát'),
+                _SoftChip(text: '${runtime.nodeRules.length} trục theo dõi'),
               ],
             ),
             const SizedBox(height: 12),
@@ -639,8 +639,8 @@ class ResultPage extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           _SectionTitle(
-            title: 'Điểm nghẽn chính',
-            subtitle: 'Diễn giải lấy từ meaning_engine.json.',
+            title: 'Các điểm nghẽn chính',
+            subtitle: 'Các trục đang góp phần kéo mức hao mòn lên.',
           ),
           const SizedBox(height: 8),
           for (final node in topNodes)
@@ -650,7 +650,7 @@ class ResultPage extends StatelessWidget {
           const SizedBox(height: 16),
           _SectionTitle(
             title: 'Việc nên làm hôm nay',
-            subtitle: 'Khuyến nghị lấy từ recommendation_engine.json.',
+            subtitle: 'Chọn 1–2 việc nhỏ, dễ làm ngay hôm nay.',
           ),
           const SizedBox(height: 8),
           for (final action in result.actions)
@@ -1256,8 +1256,8 @@ class HelpPage extends StatelessWidget {
             body: 'Trong app này, điểm không phải “pin còn lại”, mà là “mức hao mòn”. Điểm cao nghĩa là hệ đang chịu nhiều áp lực hơn khả năng hồi phục.',
           ),
           _HelpBlock(
-            title: 'Node là gì?',
-            body: 'Node là các trục chính của hệ: nạp, chuyển hóa, dự trữ, tải, phục hồi, thích nghi, hao mòn và mất kiểm soát. Node nào điểm cao hơn thì node đó đang góp phần kéo hệ lệch nhiều hơn.',
+            title: 'Trục là gì?',
+            body: 'Trục là các nhóm tín hiệu chính của hệ: nạp, chuyển hóa, dự trữ, tải, phục hồi, thích nghi, hao mòn và mất kiểm soát. Trục nào điểm cao hơn thì trục đó đang góp phần kéo hệ lệch nhiều hơn.',
           ),
           _HelpBlock(
             title: 'Cách đọc xu hướng',
@@ -1357,5 +1357,6 @@ class PrivacyPolicyPage extends StatelessWidget {
     );
   }
 }
+
 
 
