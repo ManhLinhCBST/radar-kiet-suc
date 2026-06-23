@@ -1,0 +1,29 @@
+﻿APP NAME
+Radar Kiệt Sức
+
+SHORT DESCRIPTION
+Theo dõi hao mòn, phục hồi và xu hướng sức khỏe hằng ngày
+
+FULL DESCRIPTION
+Radar Kiệt Sức là ứng dụng wellness self-tracking giúp bạn tự check-in trạng thái cơ thể mỗi ngày, ước lượng mức hao mòn, xem xu hướng phục hồi hoặc suy giảm, và nhận gợi ý hồi phục cơ bản.
+
+Ứng dụng phù hợp với người muốn quan sát nhịp sống, tải công việc, mức phục hồi và trạng thái cơ thể theo thời gian.
+
+Tính năng chính:
+- Check-in nhanh hoặc đầy đủ 32 câu.
+- Tính chỉ số hao mòn trong ngày.
+- Diễn giải các trục như nạp, chuyển hóa, dự trữ, tải, phục hồi, thích nghi, hao mòn và mất kiểm soát.
+- Lưu lịch sử trên thiết bị.
+- Xem xu hướng hồi phục hoặc suy giảm.
+- Xuất lịch sử dưới dạng JSON.
+- Có trang giải thích cách đọc chỉ số.
+- Có trang chính sách quyền riêng tư trong ứng dụng.
+
+Cách hiểu chỉ số:
+Điểm trong app là mức hao mòn ước lượng từ câu trả lời tự đánh giá. Điểm càng cao nghĩa là cơ thể đang chịu nhiều tải hơn hoặc khả năng phục hồi đang kém hơn.
+
+Lưu ý an toàn:
+Radar Kiệt Sức không phải thiết bị y tế, không chẩn đoán bệnh, không điều trị bệnh và không thay thế bác sĩ. Nếu có triệu chứng nặng, bất thường hoặc xấu nhanh, hãy liên hệ cơ sở y tế hoặc gọi cấp cứu.
+
+Danh mục đề xuất:
+Health & Fitness

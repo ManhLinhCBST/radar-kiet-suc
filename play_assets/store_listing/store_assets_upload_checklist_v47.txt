@@ -1,0 +1,32 @@
+﻿RADAR KIỆT SỨC — V4.7 STORE ASSETS UPLOAD CHECKLIST
+
+APP NAME:
+Radar Kiệt Sức
+
+SHORT DESCRIPTION:
+Theo dõi hao mòn, phục hồi và xu hướng sức khỏe hằng ngày
+
+CATEGORY:
+Health & Fitness
+
+GRAPHIC ASSETS:
+[ ] App icon: play_assets/icons/app_icon_512.png
+[ ] Feature graphic: play_assets/feature_graphic/feature_graphic_1024x500.png
+[ ] Screenshot 01: play_assets/screenshots/phone/01_home_checkin.png
+[ ] Screenshot 02: play_assets/screenshots/phone/02_full_checkin.png
+[ ] Screenshot 03: play_assets/screenshots/phone/03_score_result.png
+[ ] Screenshot 04: play_assets/screenshots/phone/04_recommendations.png
+[ ] Screenshot 05: play_assets/screenshots/phone/05_history_trend.png
+[ ] Screenshot 06: play_assets/screenshots/phone/06_help_explain_score.png
+
+PLAY CONSOLE PATH:
+Grow users
+→ Store presence
+→ Main store listing
+
+NOTES:
+- Không dùng chữ Best, Top, #1, Free, Sale, Discount.
+- Không claim chữa bệnh.
+- Không chẩn đoán.
+- Không điều trị.
+- Không thay thế bác sĩ.
