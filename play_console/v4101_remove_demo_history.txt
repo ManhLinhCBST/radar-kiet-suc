@@ -1,0 +1,18 @@
+﻿RADAR KIỆT SỨC — V4.10.1 REMOVE DEMO HISTORY
+
+DATE=2026-06-24 08:15:56
+
+VERSION=1.0.1+2
+PACKAGE=vn.mlcbst.radarkietsuc
+
+FIX:
+[x] Removed visible demo 3-day history UI
+[x] Removed seed demo history entry point
+[x] Preserved real user history
+[x] Preserved export JSON
+[x] Rebuilt release AAB
+
+RESULT:
+READY FOR PLAY INTERNAL UPDATE
+
+AAB_PATH=D:\body_battery\build\app\outputs\bundle\release\app-release.aab

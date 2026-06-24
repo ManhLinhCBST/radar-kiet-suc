@@ -87,22 +87,7 @@ class _CheckinInputPageState extends State<CheckinInputPage> {
     });
   }
 
-  Future<void> _seedDemoHistory() async {
-    await _historyStore.seedDemo3Days();
-
-    final records = await _historyStore.loadRecords();
-
-    if (!mounted) {
-      return;
-    }
-
-    setState(() {
-      _records = records;
-      _trajectory = TrajectorySummary.fromRecords(records);
-    });
-  }
-
-  Future<void> _exportHistoryJson() async {
+    Future<void> _exportHistoryJson() async {
     final json = await _historyStore.exportRecordsJson();
 
     await Clipboard.setData(
@@ -250,7 +235,6 @@ class _CheckinInputPageState extends State<CheckinInputPage> {
                         records: _records,
                         trajectory: _trajectory,
                         onClear: _clearHistory,
-                        onSeedDemo: _seedDemoHistory,
                         onExport: _exportHistoryJson,
                       ),
                     ),
@@ -675,14 +659,12 @@ class HistoryPage extends StatelessWidget {
     required this.records,
     required this.trajectory,
     required this.onClear,
-    required this.onSeedDemo,
     required this.onExport,
   });
 
   final List<CheckinRecord> records;
   final TrajectorySummary trajectory;
   final Future<void> Function() onClear;
-  final Future<void> Function() onSeedDemo;
   final Future<void> Function() onExport;
 
   @override
@@ -708,18 +690,7 @@ class HistoryPage extends StatelessWidget {
             },
             icon: const Icon(Icons.ios_share),
           ),
-          IconButton(
-            tooltip: 'Tạo dữ liệu mẫu kiểm thử 3 ngày',
-            onPressed: () async {
-              final navigator = Navigator.of(context);
-
-              await onSeedDemo();
-
-              navigator.pop();
-            },
-            icon: const Icon(Icons.auto_fix_high),
-          ),
-          IconButton(
+IconButton(
             tooltip: 'Xóa lịch sử',
             onPressed: () async {
               final navigator = Navigator.of(context);
